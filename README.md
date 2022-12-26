@@ -1,7 +1,7 @@
 # hugo-portfolio
 
 ## run hugo 
-hugo serve -D
+hugo server -D
 
 ## Add new content 
 hugo new posts/my-first-post.md
