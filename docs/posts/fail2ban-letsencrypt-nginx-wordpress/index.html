@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Setting up fail2ban with LE/NGINX/WP · &lt; Mike /&gt;
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Michael Hanson">
+<meta name="description" content="Enable fail2ban to harden your wordpress site behind Nginx">
+<meta name="keywords" content="blog, developer, personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting up fail2ban with LE/NGINX/WP"/>
+<meta name="twitter:description" content="Enable fail2ban to harden your wordpress site behind Nginx"/>
+
+<meta property="og:title" content="Setting up fail2ban with LE/NGINX/WP" />
+<meta property="og:description" content="Enable fail2ban to harden your wordpress site behind Nginx" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-12-27T11:50:31-05:00" />
+<meta property="article:modified_time" content="2019-12-27T11:50:31-05:00" />
+
+
+
+
+<link rel="canonical" href="https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.109.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      &lt; Mike /&gt;
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/education/">Education</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/experiences/">Work</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/">
+              Setting up fail2ban with LE/NGINX/WP
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-12-27T11:50:31-05:00">
+                December 27, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/michael-hanson/">Michael Hanson</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/nginx/">Nginx</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/letsencrypt/">LetsEncrypt</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/wordpress/">WordPress</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="notice">
+  NOTICE:
+  <a class="heading-link" href="#notice">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.</p>
+<h2 id="1-edit-jaillocal">
+  1. Edit jail.local
+  <a class="heading-link" href="#1-edit-jaillocal">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>At the bottom of the file, add the following block of code.</p>
+<p><code>[wordpress]   enabled = true   port = http,https   filter = wordpress-auth   logpath = /config/log/nginx/access.log   maxretry = 3   bantime = 3600   ignoreip = 192.168.1.0/24   </code></p>
+<h2 id="2-edit-filters">
+  2. Edit filters
+  <a class="heading-link" href="#2-edit-filters">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Inside the filter.d directory create a new config file called &ldquo;wordpress-auth.conf&rdquo;</p>
+<p>Within that file add the following code:</p>
+<p><code>   [Definition]</code></p>
+<p><code>failregex = .*POST.*(wp-login.php|xmlrpc.php).* (403|200)   </code></p>
+<p>You might have noticed that I added 403 reponse code to the regex expression. By default a failed authentication to /wp-admin returns a 200, however, I set up a custom return code for failed authentication to return a 403.</p>
+<p>Inside the &ldquo;wwwrootwp-contentmu-plugins&rdquo; directory, I created a file called login_helper.php with the following code.</p>
+<p><code>   /* Return 403 instead of 200 when wp-login failed */</code></p>
+<p><code>add_action( 'wp_login_failed', function () {   status_header(403);   } );   </code></p>
+<p><img src="images/Capture-2.png" alt=""></p>
+<h2 id="3-reload-swag-docker">
+  3. Reload Swag Docker
+  <a class="heading-link" href="#3-reload-swag-docker">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You should now be seeing content within the log files under Swag/log</p>
+<p><img src="images/Capture-3.png" alt=""></p>
+<p>Here you can see a list of IPs that tried to hit /wp-admin on my site but were unable to. Click <a href="https://michaelhanson.dev/blocking-wp-admin-using-nginx/">here</a> to see how to block all public IPs using Nginx.</p>
+<p><img src="images/Capture-4-1024x260.png" alt=""></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2014 -
+    
+    2022
+     Michael Hanson 
+    
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
