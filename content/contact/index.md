@@ -38,7 +38,7 @@ draft: false
             ]
           }],
         };
-        const webhookUrl = 'https://discord.com/api/webhooks/1057097751697035284/3HoirEid1RkBwdyagcx0E6YMNXr-fH6HggiSofB5tQ74D3xbls-owqIBbW6LEbDs1u7l';
+        const webhookUrl = '';
         const response = await fetch(webhookUrl, 
         {
           method: 'POST',
