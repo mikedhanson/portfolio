@@ -125,15 +125,21 @@ icon = "fa fa-2x fa-facebook"
 weight = 4
 url = "https://www.facebook.com/notMrHanson"
 
-[[languages.en.menu.main]]
-name = "Experience"
-weight = 2
-url = "experience/"
 
 [[languages.en.menu.main]]
 name = "About"
 weight = 1
 url = "about/"
+
+[[languages.en.menu.main]]
+name = "Work"
+weight = 2
+url = "experiences/"
+
+[[languages.en.menu.main]]
+name = "Education"
+weight = 2
+url = "education/"
 
 [[languages.en.menu.main]]
 name = "Blog"
@@ -146,6 +152,6 @@ weight = 4
 url = "projects/"
 
 [[languages.en.menu.main]]
-name = "Contact me"
+name = "Contact"
 weight = 5
 url = "contact/"
