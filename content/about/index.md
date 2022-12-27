@@ -14,6 +14,7 @@ I am passionate about technology and tinkering with hardware. I enjoy coffee mor
 
 ![hiking](hiking.jpg)
 
+
 The Homelab.
 ============
 
