@@ -22,7 +22,7 @@
       <pubDate>Sat, 11 Jun 2022 12:14:27 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/contact/</guid>
-      <description>Enter your email address Enter your message Submit </description>
+      <description> Enter your email address Enter your message Submit </description>
     </item>
     
     <item>
@@ -31,9 +31,9 @@
       <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/posts/graylog-notifier/</guid>
-      <description>GrayCordLink to headingGraylog API log parser to discord
-Graylog + Discord = GrayCordLink to headingWhy?Link to headingGraylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
-How does it work?Link to headingThe script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
+      <description>GrayCord Link to heading Graylog API log parser to discord
+Graylog + Discord = GrayCord Link to heading Why? Link to heading Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
+How does it work? Link to heading The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Mon, 30 May 2022 10:35:21 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/projects/</guid>
-      <description>Open Source ProjectsLink to heading</description>
+      <description> Open Source Projects Link to heading </description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/posts/hello-world/</guid>
-      <description>Hello WorldLink to headingThats all </description>
+      <description> Hello World Link to heading Thats all </description>
     </item>
     
     <item>
@@ -60,7 +60,7 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://michaelhanson.dev/posts/custom-dns-pihole/</guid>
-      <description>Adding Custom DNS Entries into PiholeLink to headingAssuming you already have Pihole up and running, create a new .conf file in the following directory: /etc/dnsmasq.d/yourname.conf
+      <description>Adding Custom DNS Entries into Pihole Link to heading Assuming you already have Pihole up and running, create a new .conf file in the following directory: /etc/dnsmasq.d/yourname.conf
 nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2.</description>
     </item>
     
@@ -70,9 +70,9 @@ nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new
       <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</guid>
-      <description>NOTICE:Link to headingThis tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
-1. Edit jail.localLink to headingAt the bottom of the file, add the following block of code.
-[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filtersLink to headingInside the filter.</description>
+      <description>NOTICE: Link to heading This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
+1. Edit jail.local Link to heading At the bottom of the file, add the following block of code.
+[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filters Link to heading Inside the filter.</description>
     </item>
     
     <item>
@@ -81,8 +81,8 @@ nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new
       <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/posts/hosting-wp-on-unraid/</guid>
-      <description>High overview of how to setup a WordPress site that is hosted through Unraid.Link to headingThis blog is something for me to look back at as a resource and to possibly help someone like you out.
-1. Domain NamesLink to headingMake sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
+      <description>High overview of how to setup a WordPress site that is hosted through Unraid. Link to heading This blog is something for me to look back at as a resource and to possibly help someone like you out.
+1. Domain Names Link to heading Make sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
     </item>
     
     <item>
