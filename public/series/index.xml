@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on &lt; Mike /&gt;</title>
-    <link>https://michaelhanson.dev/series/</link>
+    <link>https://mikedhanson.github.io/hugo-portfolio/series/</link>
     <description>Recent content in Series on &lt; Mike /&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://michaelhanson.dev/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://mikedhanson.github.io/hugo-portfolio/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
