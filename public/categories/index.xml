@@ -5,6 +5,16 @@
     <link>https://mikedhanson.github.io/hugo-portfolio/categories/</link>
     <description>Recent content in Categories on &lt; Mike /&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://mikedhanson.github.io/hugo-portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 30 May 2022 10:32:22 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/hugo-portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking</title>
+      <link>https://mikedhanson.github.io/hugo-portfolio/categories/networking/</link>
+      <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
+      
+      <guid>https://mikedhanson.github.io/hugo-portfolio/categories/networking/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

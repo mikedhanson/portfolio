@@ -8,12 +8,21 @@
     <language>en</language>
     <lastBuildDate>Sat, 11 Jun 2022 11:44:30 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/hugo-portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>University of South Dakota</title>
+      <link>https://mikedhanson.github.io/hugo-portfolio/education/</link>
+      <pubDate>Tue, 27 Dec 2022 15:00:50 -0600</pubDate>
+      
+      <guid>https://mikedhanson.github.io/hugo-portfolio/education/</guid>
+      <description> Computer Science Link to heading (Aug 2014 - May 2018) Link to heading Business Administration (minor) Link to heading Dean&amp;rsquo;s List - Spring 2017 | Fall 2017 Association for Computing Machinery National Collegiate Cyber Defense Competition </description>
+    </item>
+    
+    <item>
       <title>Experiences</title>
       <link>https://mikedhanson.github.io/hugo-portfolio/experiences/</link>
       <pubDate>Mon, 26 Dec 2022 18:59:36 -0600</pubDate>
       
       <guid>https://mikedhanson.github.io/hugo-portfolio/experiences/</guid>
-      <description></description>
+      <description>State of South Dakota Link to heading Service Delivery Endpoint Architect Link to heading June 2021 - Present Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota. Link to heading Boarding (on/off) process automations Configured OS provisioning toolset Developed custom RESTful endpoints for various processes Enroll endpoints into Azure AD and other MDM solutions Technology Engineer II Link to heading June 2018 - June 2021 Patch Management, Endpoint security Link to heading Deployed Microsoft security updates and third-party software.</description>
     </item>
     
     <item>
@@ -22,7 +31,7 @@
       <pubDate>Sat, 11 Jun 2022 12:14:27 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/hugo-portfolio/contact/</guid>
-      <description> Enter your email address Enter your message Submit </description>
+      <description> </description>
     </item>
     
     <item>
@@ -46,22 +55,13 @@ How does it work? Link to heading The script loops on an interval doing api call
     </item>
     
     <item>
-      <title>Hello World</title>
+      <title>Custom DNS Names in PIhole</title>
       <link>https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/</link>
       <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/</guid>
-      <description> Hello World Link to heading Thats all </description>
-    </item>
-    
-    <item>
-      <title>Custom DNS Names in PIhole</title>
-      <link>https://mikedhanson.github.io/hugo-portfolio/posts/custom-dns-pihole/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mikedhanson.github.io/hugo-portfolio/posts/custom-dns-pihole/</guid>
-      <description>Adding Custom DNS Entries into Pihole Link to heading Assuming you already have Pihole up and running, create a new .conf file in the following directory: /etc/dnsmasq.d/yourname.conf
-nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2.</description>
+      <description>Assuming you already have Pihole up and running, create a new .conf file in the following directory
+/etc/dnsmasq.d/yourname.conf nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2. </description>
     </item>
     
     <item>

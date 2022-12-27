@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-  Hello World · &lt; Mike /&gt;
+  Custom DNS Names in PIhole · &lt; Mike /&gt;
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,10 @@
 <meta name="keywords" content="blog, developer, personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hello World"/>
+<meta name="twitter:title" content="Custom DNS Names in PIhole"/>
 <meta name="twitter:description" content="First Post"/>
 
-<meta property="og:title" content="Hello World" />
+<meta property="og:title" content="Custom DNS Names in PIhole" />
 <meta property="og:description" content="First Post" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/" /><meta property="article:section" content="posts" />
@@ -47,7 +47,7 @@
   
     
     
-    <link rel="stylesheet" href="/hugo-portfolio/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/hugo-portfolio/css/coder-dark.min.7406a3a70a4955d5d8444b1a53cffa2a1022f1e5a67eb7698a3fb9055211f6be.css" integrity="sha256-dAajpwpJVdXYREsaU8/6KhAi8eWmfrdpij&#43;5BVIR9r4=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -106,7 +106,7 @@
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/hugo-portfolio/about/">About</a>
+              <a class="navigation-link" href="/hugo-portfolio/experiences/">Work</a>
             </li>
           
             <li class="navigation-item">
@@ -114,19 +114,15 @@
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/hugo-portfolio/experiences/">Work</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/hugo-portfolio/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
               <a class="navigation-link" href="/hugo-portfolio/projects/">Projects</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/hugo-portfolio/contact/">Contact</a>
+              <a class="navigation-link" href="/hugo-portfolio/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/hugo-portfolio/posts/">Blog</a>
             </li>
           
         
@@ -145,7 +141,7 @@
         <div class="post-title">
           <h1 class="title">
             <a class="title-link" href="https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/">
-              Hello World
+              Custom DNS Names in PIhole
             </a>
           </h1>
         </div>
@@ -166,23 +162,29 @@
   <i class="fa fa-user" aria-hidden="true"></i>
     <a href="/hugo-portfolio/authors/michael-hanson/">Michael Hanson</a></div>
 
-          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/hugo-portfolio/categories/networking/">Networking</a></div>
+
           
         </div>
       </header>
 
       <div class="post-content">
         
-        <h1 id="hello-world">
-  Hello World
-  <a class="heading-link" href="#hello-world">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-<ul>
-<li>Thats all</li>
-</ul>
+        <p>Assuming you already have Pihole up and running, create a new .conf file in the following directory</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>/etc/dnsmasq.d/yourname.conf
+</span></span></code></pre></div><ol>
+<li>nano or vim into &ldquo;yourname.conf&rdquo;</li>
+<li>Add the following  on a new line &ldquo;address=/unraid.local/192.168.1.100&rdquo;</li>
+<li>That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. </li>
+<li>Reload pihole DNS
+<ol>
+<li>pihole restartdns</li>
+</ol>
+</li>
+<li>Now navigate to that address you specified in step 2.</li>
+</ol>
 
       </div>
 

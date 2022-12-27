@@ -19,22 +19,13 @@ How does it work? Link to heading The script loops on an interval doing api call
     </item>
     
     <item>
-      <title>Hello World</title>
+      <title>Custom DNS Names in PIhole</title>
       <link>https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/</link>
       <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/</guid>
-      <description> Hello World Link to heading Thats all </description>
-    </item>
-    
-    <item>
-      <title>Custom DNS Names in PIhole</title>
-      <link>https://mikedhanson.github.io/hugo-portfolio/posts/custom-dns-pihole/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mikedhanson.github.io/hugo-portfolio/posts/custom-dns-pihole/</guid>
-      <description>Adding Custom DNS Entries into Pihole Link to heading Assuming you already have Pihole up and running, create a new .conf file in the following directory: /etc/dnsmasq.d/yourname.conf
-nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2.</description>
+      <description>Assuming you already have Pihole up and running, create a new .conf file in the following directory
+/etc/dnsmasq.d/yourname.conf nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2. </description>
     </item>
     
     <item>
