@@ -8,12 +8,21 @@
     <language>en</language>
     <lastBuildDate>Sat, 11 Jun 2022 11:44:30 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Contact</title>
+      <title>Experiences</title>
+      <link>https://michaelhanson.dev/experiences/</link>
+      <pubDate>Mon, 26 Dec 2022 18:59:36 -0600</pubDate>
+      
+      <guid>https://michaelhanson.dev/experiences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Send me a message</title>
       <link>https://michaelhanson.dev/contact/</link>
       <pubDate>Sat, 11 Jun 2022 12:14:27 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/contact/</guid>
-      <description>You can find me here:Link to headingGitHub LinkedIn </description>
+      <description>Enter your email address Enter your message Submit </description>
     </item>
     
     <item>
@@ -82,7 +91,8 @@ nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://michaelhanson.dev/about/</guid>
-      <description>I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.
+      <description>Hi there 👋
+I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.
 I am passionate about technology and tinkering with hardware.</description>
     </item>
     
