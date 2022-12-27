@@ -15,7 +15,7 @@ author = "Michael Hanson"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Mikes portfolio"
 keywords = "blog, developer, personal"
-info = ["Endpoint Architect - South Dakota", "Security Enthusiast", "Self-Hosting", "Typical Nerd"]
+info = ["Endpoint Architect (South Dakota)", "Security Enthusiast", "Self-Hosting"]
 avatarURL = "https://media.licdn.com/dms/image/C4D03AQFelnIg3H46nA/profile-displayphoto-shrink_400_400/0/1591655309422?e=1677715200&v=beta&t=631TWMjPdG3sxFFE_UsSF1IFkH9OYypmDQRpni4fhrU"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -111,13 +111,13 @@ url = "https://github.com/mikedhanson"
 [[params.social]]
 name = "Twitter"
 icon = "fa fa-2x fa-twitter"
-weight = 3
+weight = 2
 url = "https://twitter.com/mikehanson1458"
 
 [[params.social]]
 name = "LinkedIn"
 icon = "fa fa-2x fa-linkedin"
-weight = 4
+weight = 3
 url = "https://www.linkedin.com/in/michael-h-396129134/"
 
 [[params.social]]
@@ -126,15 +126,9 @@ icon = "fa fa-2x fa-facebook"
 weight = 4
 url = "https://www.facebook.com/notMrHanson"
 
-
-[[languages.en.menu.main]]
-name = "About"
-weight = 1
-url = "about/"
-
 [[languages.en.menu.main]]
 name = "Work"
-weight = 2
+weight = 1
 url = "experiences/"
 
 [[languages.en.menu.main]]
@@ -143,16 +137,21 @@ weight = 2
 url = "education/"
 
 [[languages.en.menu.main]]
-name = "Blog"
-weight = 3
-url = "posts/"
-
-[[languages.en.menu.main]]
 name = "Projects"
-weight = 4
+weight = 3
 url = "projects/"
 
 [[languages.en.menu.main]]
-name = "Contact"
+name = "About"
+weight = 4
+url = "about/"
+
+[[languages.en.menu.main]]
+name = "Blog"
 weight = 5
-url = "contact/"
+url = "posts/"
+
+#[[languages.en.menu.main]]
+#name = "Contact"
+#weight = 5
+#url = "contact/"

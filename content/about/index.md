@@ -12,14 +12,12 @@ I recently took a new position with the State of South Dakota as an Endpoint Arc
 
 I am passionate about technology and tinkering with hardware. I enjoy coffee more than I should and like to spend time outdoors either camping or on the water.
 
-![hiking](hiking.jpg)
-
+{{< rawhtml >}}
+<img src="hiking.jpg" width="600" height="800">
+{{</ rawhtml >}}
 
 The Homelab.
 ============
-
-![homelab](homelab.jpg)
-
 Eventually I'll do a writeup on my homelab but for now heres a picture and some details on what I'm running.
 
 - Media Server: Unraid
@@ -27,3 +25,7 @@ Eventually I'll do a writeup on my homelab but for now heres a picture and some 
 - Firewall: Fortigate
 - Access Points: Unifi
 - Battery Backup: APC
+
+{{< rawhtml >}}
+<img src="homelab.jpg" width="600" height="800">
+{{</ rawhtml >}}
