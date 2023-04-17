@@ -1,6 +1,6 @@
 body.colorscheme-dark {
   color: #dadada;
-  background-color: #161616; }
+  background-color: #212121; }
   body.colorscheme-dark a {
     color: #42a5f5; }
   body.colorscheme-dark h1,
@@ -9,7 +9,7 @@ body.colorscheme-dark {
   body.colorscheme-dark h4,
   body.colorscheme-dark h5,
   body.colorscheme-dark h6 {
-    color: #fffcfc; }
+    color: #dadada; }
     body.colorscheme-dark h1:hover .heading-link,
     body.colorscheme-dark h2:hover .heading-link,
     body.colorscheme-dark h3:hover .heading-link,
@@ -42,7 +42,7 @@ body.colorscheme-dark {
     color: #dadada; }
   body.colorscheme-dark .highlight pre {
     background-color: #424242;
-    color: black; }
+    color: #dadada; }
     body.colorscheme-dark .highlight pre code {
       background-color: inherit;
       color: inherit; }
@@ -58,7 +58,7 @@ body.colorscheme-dark {
     border-collapse: collapse; }
   body.colorscheme-dark table td,
   body.colorscheme-dark table th {
-    border: 2px solid #fffcfc; }
+    border: 2px solid #dadada; }
   body.colorscheme-dark table tr:first-child th {
     border-top: 0; }
   body.colorscheme-dark table tr:last-child td {
@@ -73,7 +73,7 @@ body.colorscheme-dark {
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto {
     color: #dadada;
-    background-color: #161616; }
+    background-color: #212121; }
     body.colorscheme-auto a {
       color: #42a5f5; }
     body.colorscheme-auto h1,
@@ -82,7 +82,7 @@ body.colorscheme-dark {
     body.colorscheme-auto h4,
     body.colorscheme-auto h5,
     body.colorscheme-auto h6 {
-      color: #fffcfc; }
+      color: #dadada; }
       body.colorscheme-auto h1:hover .heading-link,
       body.colorscheme-auto h2:hover .heading-link,
       body.colorscheme-auto h3:hover .heading-link,
@@ -115,7 +115,7 @@ body.colorscheme-dark {
       color: #dadada; }
     body.colorscheme-auto .highlight pre {
       background-color: #424242;
-      color: black; }
+      color: #dadada; }
       body.colorscheme-auto .highlight pre code {
         background-color: inherit;
         color: inherit; }
@@ -131,7 +131,7 @@ body.colorscheme-dark {
       border-collapse: collapse; }
     body.colorscheme-auto table td,
     body.colorscheme-auto table th {
-      border: 2px solid #fffcfc; }
+      border: 2px solid #dadada; }
     body.colorscheme-auto table tr:first-child th {
       border-top: 0; }
     body.colorscheme-auto table tr:last-child td {
@@ -177,11 +177,11 @@ body.colorscheme-dark .content .centered .about ul li a {
       color: #42a5f5; } }
 
 body.colorscheme-dark .notice .notice-title {
-  border-bottom: 1px solid #161616; }
+  border-bottom: 1px solid #212121; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .notice .notice-title {
-    border-bottom: 1px solid #161616; } }
+    border-bottom: 1px solid #212121; } }
 
 body.colorscheme-dark .navigation a,
 body.colorscheme-dark .navigation span {
@@ -192,7 +192,7 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
 
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation .navigation-list {
-    background-color: #161616;
+    background-color: #212121;
     border-top: solid 2px #424242;
     border-bottom: solid 2px #424242; } }
 
@@ -210,7 +210,7 @@ body.colorscheme-dark .navigation i {
     color: #42a5f5; }
 
 body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .navigation .menu-button i:focus {
-  color: #fffcfc; }
+  color: #dadada; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .navigation a,
@@ -221,7 +221,7 @@ body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .n
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation .navigation-list {
-    background-color: #161616;
+    background-color: #212121;
     border-top: solid 2px #424242;
     border-bottom: solid 2px #424242; } }
 
@@ -239,17 +239,17 @@ body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .n
     body.colorscheme-auto .navigation i:hover, body.colorscheme-auto .navigation i:focus {
       color: #42a5f5; }
   body.colorscheme-auto .navigation .menu-button i:hover, body.colorscheme-auto .navigation .menu-button i:focus {
-    color: #fffcfc; } }
+    color: #dadada; } }
 
 body.colorscheme-dark .tabs label.tab-label {
   background-color: #424242;
   border-color: #4f4f4f; }
 
 body.colorscheme-dark .tabs input.tab-input:checked + label.tab-label {
-  background-color: #161616; }
+  background-color: #212121; }
 
 body.colorscheme-dark .tabs .tab-content {
-  background-color: #161616;
+  background-color: #212121;
   border-color: #4f4f4f; }
 
 @media (prefers-color-scheme: dark) {
@@ -257,9 +257,9 @@ body.colorscheme-dark .tabs .tab-content {
     background-color: #424242;
     border-color: #4f4f4f; }
   body.colorscheme-auto .tabs input.tab-input:checked + label.tab-label {
-    background-color: #161616; }
+    background-color: #212121; }
   body.colorscheme-auto .tabs .tab-content {
-    background-color: #161616;
+    background-color: #212121;
     border-color: #4f4f4f; } }
 
 body.colorscheme-dark .taxonomy-element {
@@ -285,21 +285,21 @@ body.colorscheme-dark .footer a {
     color: #42a5f5; } }
 
 body.colorscheme-dark .float-container a {
-  color: #fffcfc;
+  color: #dadada;
   background-color: #424242; }
   body.colorscheme-dark .float-container a:hover, body.colorscheme-dark .float-container a:focus {
     color: #42a5f5; }
     @media only screen and (max-width: 768px) {
       body.colorscheme-dark .float-container a:hover, body.colorscheme-dark .float-container a:focus {
-        color: #fffcfc; } }
+        color: #dadada; } }
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .float-container a {
-    color: #fffcfc;
+    color: #dadada;
     background-color: #424242; }
     body.colorscheme-auto .float-container a:hover, body.colorscheme-auto .float-container a:focus {
       color: #42a5f5; } }
     @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
       body.colorscheme-auto .float-container a:hover, body.colorscheme-auto .float-container a:focus {
-        color: #fffcfc; } }
+        color: #dadada; } }
 
 /*# sourceMappingURL=coder-dark.css.map */
