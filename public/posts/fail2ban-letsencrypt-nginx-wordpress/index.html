@@ -47,7 +47,7 @@
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.min.7406a3a70a4955d5d8444b1a53cffa2a1022f1e5a67eb7698a3fb9055211f6be.css" integrity="sha256-dAajpwpJVdXYREsaU8/6KhAi8eWmfrdpij&#43;5BVIR9r4=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -69,7 +69,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.111.3">
+<meta name="generator" content="Hugo 0.109.0">
 
 
 
@@ -194,7 +194,7 @@
   </a>
 </h2>
 <p>At the bottom of the file, add the following block of code.</p>
-<p><code>[wordpress]   enabled = true   port = http,https   filter = wordpress-auth   logpath = /config/log/nginx/access.log   maxretry = 3   bantime = 3600   ignoreip = 192.168.1.0/24   </code></p>
+<p><code>[wordpress]   enabled = true   port = http,https   filter = wordpress-auth   logpath = /config/log/nginx/access.log   maxretry = 3   bantime = 3600   ignoreip = 192.168.1.0/24   </code></p>
 <h2 id="2-edit-filters">
   2. Edit filters
   <a class="heading-link" href="#2-edit-filters">
@@ -204,12 +204,12 @@
 </h2>
 <p>Inside the filter.d directory create a new config file called &ldquo;wordpress-auth.conf&rdquo;</p>
 <p>Within that file add the following code:</p>
-<p><code>   [Definition]</code></p>
-<p><code>failregex = .*POST.*(wp-login.php|xmlrpc.php).* (403|200)   </code></p>
+<p><code>   [Definition]</code></p>
+<p><code>failregex = .*POST.*(wp-login.php|xmlrpc.php).* (403|200)   </code></p>
 <p>You might have noticed that I added 403 reponse code to the regex expression. By default a failed authentication to /wp-admin returns a 200, however, I set up a custom return code for failed authentication to return a 403.</p>
 <p>Inside the &ldquo;wwwrootwp-contentmu-plugins&rdquo; directory, I created a file called login_helper.php with the following code.</p>
-<p><code>   /* Return 403 instead of 200 when wp-login failed */</code></p>
-<p><code>add_action( 'wp_login_failed', function () {   status_header(403);   } );   </code></p>
+<p><code>   /* Return 403 instead of 200 when wp-login failed */</code></p>
+<p><code>add_action( 'wp_login_failed', function () {   status_header(403);   } );   </code></p>
 <p><img src="images/Capture-2.png" alt=""></p>
 <h2 id="3-reload-swag-docker">
   3. Reload Swag Docker

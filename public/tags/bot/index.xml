@@ -13,9 +13,9 @@
       <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/posts/graylog-notifier/</guid>
-      <description>GrayCordLink to headingGraylog API log parser to discord
-Graylog + Discord = GrayCordLink to headingWhy?Link to headingGraylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
-How does it work?Link to headingThe script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
+      <description>GrayCord Link to heading Graylog API log parser to discord
+Graylog + Discord = GrayCord Link to heading Why? Link to heading Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
+How does it work? Link to heading The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
     </item>
     
   </channel>

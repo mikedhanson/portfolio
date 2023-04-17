@@ -22,7 +22,7 @@
       <pubDate>Mon, 26 Dec 2022 18:59:36 -0600</pubDate>
       
       <guid>https://mikedhanson.github.io/experiences/</guid>
-      <description>South Dakota: Bureau of Information and TelecommunicationsLink to headingService Delivery Endpoint Architect (June 2021 - Present) Synopsis: Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota.
+      <description>South Dakota: Bureau of Information and Telecommunications Link to heading Service Delivery Endpoint Architect (June 2021 - Present) Synopsis: Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota.
 Boarding (on/off) process automations Configured OS provisioning toolset Developed custom RESTful endpoints for various toolsets Enroll endpoints into Azure AD and other MDM solutions Technology Engineer II (June 2018 – June 2021)</description>
     </item>
     
@@ -32,9 +32,9 @@ Boarding (on/off) process automations Configured OS provisioning toolset Develop
       <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/posts/graylog-notifier/</guid>
-      <description>GrayCordLink to headingGraylog API log parser to discord
-Graylog + Discord = GrayCordLink to headingWhy?Link to headingGraylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
-How does it work?Link to headingThe script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
+      <description>GrayCord Link to heading Graylog API log parser to discord
+Graylog + Discord = GrayCord Link to heading Why? Link to heading Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
+How does it work? Link to heading The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Mon, 30 May 2022 10:35:21 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/projects/</guid>
-      <description>Open Source ProjectsLink to headingcoming soonLink to heading</description>
+      <description> Open Source Projects Link to heading coming soon Link to heading </description>
     </item>
     
     <item>
@@ -52,9 +52,9 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/posts/fail2ban-letsencrypt-nginx-wordpress/</guid>
-      <description>NOTICE:Link to headingThis tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
-1. Edit jail.localLink to headingAt the bottom of the file, add the following block of code.
-[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filtersLink to headingInside the filter.</description>
+      <description>NOTICE: Link to heading This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
+1. Edit jail.local Link to heading At the bottom of the file, add the following block of code.
+[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filters Link to heading Inside the filter.</description>
     </item>
     
     <item>
@@ -63,8 +63,8 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/posts/hosting-wp-on-unraid/</guid>
-      <description>High overview of how to setup a WordPress site that is hosted through Unraid.Link to headingThis blog is something for me to look back at as a resource and to possibly help someone like you out.
-1. Domain NamesLink to headingMake sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
+      <description>High overview of how to setup a WordPress site that is hosted through Unraid. Link to heading This blog is something for me to look back at as a resource and to possibly help someone like you out.
+1. Domain Names Link to heading Make sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
     </item>
     
     <item>

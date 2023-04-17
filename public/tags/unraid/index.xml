@@ -13,8 +13,8 @@
       <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/posts/hosting-wp-on-unraid/</guid>
-      <description>High overview of how to setup a WordPress site that is hosted through Unraid.Link to headingThis blog is something for me to look back at as a resource and to possibly help someone like you out.
-1. Domain NamesLink to headingMake sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
+      <description>High overview of how to setup a WordPress site that is hosted through Unraid. Link to heading This blog is something for me to look back at as a resource and to possibly help someone like you out.
+1. Domain Names Link to heading Make sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
     </item>
     
   </channel>
