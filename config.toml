@@ -1,4 +1,4 @@
-baseURL = "https://mikedhanson.github.io/hugo-portfolio/"
+baseURL = "https://mikedhanson.github.io/"
 title = "< Mike />"
 theme = "hugo-coder"
 languageCode = "en"
@@ -10,13 +10,16 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 #publishDir = "docs"
 
+[markup.highlight]
+style = "github-dark"
+
 [params]
 author = "Michael Hanson"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Mikes portfolio"
 keywords = "blog, developer, personal"
 info = ["Endpoint Architect - South Dakota", "Security Enthusiast", "Self-Hosting", "Typical Nerd"]
-avatarURL = "https://media.licdn.com/dms/image/C4D03AQFelnIg3H46nA/profile-displayphoto-shrink_400_400/0/1591655309422?e=1677715200&v=beta&t=631TWMjPdG3sxFFE_UsSF1IFkH9OYypmDQRpni4fhrU"
+avatarURL = "images/MeAndCait.png"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2014
@@ -40,6 +43,8 @@ customCSS = []
 customSCSS = []
 # Custom JS
 customJS = []
+
+enableTwemoji = true
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
@@ -139,20 +144,16 @@ url = "experiences/"
 
 [[languages.en.menu.main]]
 name = "Education"
-weight = 2
+weight = 3
 url = "education/"
 
 [[languages.en.menu.main]]
 name = "Blog"
-weight = 3
+weight = 4
 url = "posts/"
 
 [[languages.en.menu.main]]
 name = "Projects"
-weight = 4
+weight = 5
 url = "projects/"
 
-[[languages.en.menu.main]]
-name = "Contact"
-weight = 5
-url = "contact/"
