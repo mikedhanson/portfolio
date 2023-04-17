@@ -142,7 +142,6 @@ weight = 3
 url = "education/"
 
 [[languages.en.menu.main]]
-<<<<<<< HEAD
 name = "Blog"
 weight = 4
 url = "posts/"
@@ -152,23 +151,3 @@ name = "Projects"
 weight = 5
 url = "projects/"
 
-=======
-name = "Projects"
-weight = 3
-url = "projects/"
-
-[[languages.en.menu.main]]
-name = "About"
-weight = 4
-url = "about/"
-
-[[languages.en.menu.main]]
-name = "Blog"
-weight = 5
-url = "posts/"
-
-#[[languages.en.menu.main]]
-#name = "Contact"
-#weight = 5
-#url = "contact/"
->>>>>>> 8c2d36180000dba89c191b3de3ad81ed176f416a
