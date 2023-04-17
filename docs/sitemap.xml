@@ -38,6 +38,15 @@
     <loc>https://mikedhanson.github.io/hugo-portfolio/projects/</loc>
     <lastmod>2022-05-30T10:35:21-05:00</lastmod>
   </url><url>
+    <loc>https://mikedhanson.github.io/hugo-portfolio/categories/</loc>
+    <lastmod>2022-05-30T10:32:22-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/hugo-portfolio/posts/hello-world/</loc>
+    <lastmod>2022-05-30T10:32:22-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/hugo-portfolio/categories/networking/</loc>
+    <lastmod>2022-05-30T10:32:22-05:00</lastmod>
+  </url><url>
     <loc>https://mikedhanson.github.io/hugo-portfolio/tags/letsencrypt/</loc>
     <lastmod>2019-12-27T11:50:31-05:00</lastmod>
   </url><url>
@@ -58,8 +67,6 @@
   </url><url>
     <loc>https://mikedhanson.github.io/hugo-portfolio/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mikedhanson.github.io/hugo-portfolio/categories/</loc>
   </url><url>
     <loc>https://mikedhanson.github.io/hugo-portfolio/series/</loc>
   </url>
