@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on &lt;$Mike/&gt;</title>
-    <link>https://mikedhanson.github.io/hugo-portfolio/categories/</link>
+    <link>https://mikedhanson.github.io/portfolio/categories/</link>
     <description>Recent content in Categories on &lt;$Mike/&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 May 2022 10:32:22 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/hugo-portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 10:32:22 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/portfolio/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Networking</title>
-      <link>https://mikedhanson.github.io/hugo-portfolio/categories/networking/</link>
+      <link>https://mikedhanson.github.io/portfolio/categories/networking/</link>
       <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
       
-      <guid>https://mikedhanson.github.io/hugo-portfolio/categories/networking/</guid>
+      <guid>https://mikedhanson.github.io/portfolio/categories/networking/</guid>
       <description></description>
     </item>
     
