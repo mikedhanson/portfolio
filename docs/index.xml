@@ -43,7 +43,9 @@ How does it work?Link to headingThe script loops on an interval doing api call
       <pubDate>Mon, 30 May 2022 10:35:21 -0500</pubDate>
       
       <guid>https://mikedhanson.github.io/portfolio/projects/</guid>
-      <description>Open Source ProjectsLink to headingcoming soonLink to heading</description>
+      <description>Here&amp;rsquo;s a list of some of the open source projects I&amp;rsquo;ve worked on:
+ChocolateyManagerLink to headingI was tired of manually running chocolatey updates and wanted a more automated way for my updates to just happen in the background. If you are interested in automating your software updates, have a look at the repo.
+If you run the update script from windows task scheduler you will get a nice toast message when your updater runs.</description>
     </item>
     
     <item>
