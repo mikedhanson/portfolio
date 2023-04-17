@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bot on &lt; Mike /&gt;</title>
-    <link>https://mikedhanson.github.io/tags/bot/</link>
+    <link>https://mikedhanson.github.io/portfolio/tags/bot/</link>
     <description>Recent content in Bot on &lt; Mike /&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Jun 2022 11:44:30 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/tags/bot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jun 2022 11:44:30 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/portfolio/tags/bot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graylog Notifier</title>
-      <link>https://mikedhanson.github.io/posts/graylog-notifier/</link>
+      <link>https://mikedhanson.github.io/portfolio/posts/graylog-notifier/</link>
       <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
       
-      <guid>https://mikedhanson.github.io/posts/graylog-notifier/</guid>
+      <guid>https://mikedhanson.github.io/portfolio/posts/graylog-notifier/</guid>
       <description>GrayCord Link to heading Graylog API log parser to discord
 Graylog + Discord = GrayCord Link to heading Why? Link to heading Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
 How does it work? Link to heading The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
