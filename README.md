@@ -1,6 +1,6 @@
-# hugo-portfolio
+# Portfolio
 
-## live site: 
+## Site: https://mikedhanson.github.io/portfolio/
 
 ## Add theme
 git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
