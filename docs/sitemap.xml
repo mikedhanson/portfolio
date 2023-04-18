@@ -2,19 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mikedhanson.github.io/portfolio/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/posts/powershell-param/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/authors/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/categories/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/categories/code/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/authors/michael-hanson/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/posts/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/tags/powershell/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
+    <loc>https://mikedhanson.github.io/portfolio/tags/</loc>
+    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+  </url><url>
     <loc>https://mikedhanson.github.io/portfolio/education/</loc>
     <lastmod>2023-04-16T18:23:41-05:00</lastmod>
   </url><url>
     <loc>https://mikedhanson.github.io/portfolio/experiences/</loc>
     <lastmod>2022-12-26T18:59:36-06:00</lastmod>
   </url><url>
-    <loc>https://mikedhanson.github.io/portfolio/</loc>
-    <lastmod>2022-06-11T11:44:30-05:00</lastmod>
-  </url><url>
     <loc>https://mikedhanson.github.io/portfolio/tags/api/</loc>
-    <lastmod>2022-06-11T11:44:30-05:00</lastmod>
-  </url><url>
-    <loc>https://mikedhanson.github.io/portfolio/authors/</loc>
     <lastmod>2022-06-11T11:44:30-05:00</lastmod>
   </url><url>
     <loc>https://mikedhanson.github.io/portfolio/tags/bot/</loc>
@@ -26,20 +47,8 @@
     <loc>https://mikedhanson.github.io/portfolio/posts/graylog-notifier/</loc>
     <lastmod>2022-06-11T11:44:30-05:00</lastmod>
   </url><url>
-    <loc>https://mikedhanson.github.io/portfolio/authors/michael-hanson/</loc>
-    <lastmod>2022-06-11T11:44:30-05:00</lastmod>
-  </url><url>
-    <loc>https://mikedhanson.github.io/portfolio/posts/</loc>
-    <lastmod>2022-06-11T11:44:30-05:00</lastmod>
-  </url><url>
-    <loc>https://mikedhanson.github.io/portfolio/tags/</loc>
-    <lastmod>2022-06-11T11:44:30-05:00</lastmod>
-  </url><url>
     <loc>https://mikedhanson.github.io/portfolio/projects/</loc>
     <lastmod>2022-05-30T10:35:21-05:00</lastmod>
-  </url><url>
-    <loc>https://mikedhanson.github.io/portfolio/categories/</loc>
-    <lastmod>2022-05-30T10:32:22-05:00</lastmod>
   </url><url>
     <loc>https://mikedhanson.github.io/portfolio/posts/hello-world/</loc>
     <lastmod>2022-05-30T10:32:22-05:00</lastmod>
