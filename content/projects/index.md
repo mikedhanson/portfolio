@@ -39,7 +39,7 @@ The script loops on an interval doing api calls to graylog checking for the SEAR
 
 ### How does it work? And why?
 
-Following the 3-2-1 backup [strategy](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) and hosting an undraid server I wanted an automated way to backup core files and folders on my unraid server all while encrypting the offsite data. The solution to this was rclone. I was able to write some scripts the uses rclone to do all of this. This solution encorperates logging and alerts in unraid which get sent to a discord server. 
+Following the 3-2-1 backup [strategy](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) and hosting an unraid server I wanted an automated way to backup core files and folders on my unraid server all while encrypting the offsite data. The solution to this was rclone. I was able to write some scripts that use rclone to do all of this. This solution incorporates logging and alerts in unraid which get sent to a discord server.
 
 ### Items backed up 
 * Appdata 
@@ -65,7 +65,7 @@ Following the 3-2-1 backup [strategy](https://www.backblaze.com/blog/the-3-2-1-b
 
 ### What? 
 
-I wanted to learn flask during the pandemic.
+I wanted to learn about flask during the pandemic.
 
 [Repository](hhttps://github.com/mikedhanson/Flask-Weather-Covid)
 
