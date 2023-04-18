@@ -139,6 +139,11 @@ weight = 1
 url = "experiences/"
 
 [[languages.en.menu.main]]
+name = "About"
+weight = 2
+url = "about/"
+
+[[languages.en.menu.main]]
 name = "Education"
 weight = 3
 url = "education/"

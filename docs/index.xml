@@ -85,7 +85,7 @@ If you run the update script from windows task scheduler you will get a nice toa
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://mikedhanson.github.io/portfolio/about/</guid>
-      <description>$aboutMe = [PSCustomObject]@{ Name = &amp;#39;Michael&amp;#39; Language = &amp;#39;PowerShell&amp;#39; State = &amp;#39;South Dakota&amp;#39; OpenToWork = $true } return $aboutMe I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.</description>
+      <description>$aboutMe = [PSCustomObject]@{ Name = &amp;#39;Michael&amp;#39; Languages = @(&amp;#34;PowerShell&amp;#34;, &amp;#34;C#&amp;#34;, &amp;#34;Java&amp;#34;) Location = &amp;#39;South Dakota&amp;#39; OpenToWork = $true } return $aboutMe I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.</description>
     </item>
     
   </channel>
