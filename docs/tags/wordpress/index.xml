@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WordPress on &lt;$Mike/&gt;</title>
-    <link>https://mikedhanson.github.io/portfolio/tags/wordpress/</link>
+    <link>https://portfolio.michaelhanson.dev/tags/wordpress/</link>
     <description>Recent content in WordPress on &lt;$Mike/&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Dec 2019 11:50:31 -0500</lastBuildDate><atom:link href="https://mikedhanson.github.io/portfolio/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Dec 2019 11:50:31 -0500</lastBuildDate><atom:link href="https://portfolio.michaelhanson.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up fail2ban with LE/NGINX/WP</title>
-      <link>https://mikedhanson.github.io/portfolio/posts/fail2ban-letsencrypt-nginx-wordpress/</link>
+      <link>https://portfolio.michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</link>
       <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
       
-      <guid>https://mikedhanson.github.io/portfolio/posts/fail2ban-letsencrypt-nginx-wordpress/</guid>
+      <guid>https://portfolio.michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</guid>
       <description>NOTICE:Link to headingThis tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
 1. Edit jail.localLink to headingAt the bottom of the file, add the following block of code.
 [wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filtersLink to headingInside the filter.</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>WordPress and UnRaid</title>
-      <link>https://mikedhanson.github.io/portfolio/posts/hosting-wp-on-unraid/</link>
+      <link>https://portfolio.michaelhanson.dev/posts/hosting-wp-on-unraid/</link>
       <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
       
-      <guid>https://mikedhanson.github.io/portfolio/posts/hosting-wp-on-unraid/</guid>
+      <guid>https://portfolio.michaelhanson.dev/posts/hosting-wp-on-unraid/</guid>
       <description>High overview of how to setup a WordPress site that is hosted through Unraid.Link to headingThis blog is something for me to look back at as a resource and to possibly help someone like you out.
 1. Domain NamesLink to headingMake sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
     </item>
