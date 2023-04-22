@@ -26,9 +26,9 @@ height="200"
         "gpa": "3.6",
         "courses": {
           "course1": "CSC 101",
-          "course2": "2018-05-01",
-          "course3": "completed",
-          "course4": "3.6"
+          "course2": "CSC 201",
+          "course3": "CSC 301",
+          "course4": "todo"
         }
       },
       "minor": {

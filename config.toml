@@ -1,4 +1,4 @@
-baseURL = "https://portfolio.michaelhanson.dev"
+baseURL = "https://michaelhanson.dev"
 title = "<$Mike/>"
 theme = "hugo-coder"
 languageCode = "en"
@@ -18,7 +18,13 @@ author = "Michael Hanson"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Mikes portfolio"
 keywords = "blog, developer, personal"
-info = ["⚒️ Endpoint Architect ", "⚡ Automation", "🛡️ Security", "🧑‍💻 Self-Hosting"]
+info = [
+    "⚒️ Endpoint Architect ", 
+    "⚡ Automation", 
+    "🛡️ Security", 
+    "🧑‍💻 Self-Hosting"
+]
+
 avatarURL = "images/MeAndCait.png"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
@@ -39,14 +45,31 @@ colorScheme = "auto"
 hideColorSchemeToggle = false
 # Series see also post count
 maxSeeAlsoItems = 5
+
 # Custom CSS
 customCSS = []
+
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
 # Custom JS
 customJS = []
 
 enableTwemoji = true
+
+[params.giscus] # https://giscus.app
+  repo = "https://github.com/mikedhanson/portfolio"
+  repoID = ""
+  category = ""
+  categoryID = ""
+  mapping = ""
+  term = ""
+  strict = ""
+  reactionsEnabled = ""
+  emitMetadata = ""
+  inputPosition = ""
+  theme = ""
+  lang = ""
+  loading = ""
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]

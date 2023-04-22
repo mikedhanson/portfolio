@@ -193,8 +193,8 @@ body.colorscheme-dark .navigation a:hover, body.colorscheme-dark .navigation a:f
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation .navigation-list {
     background-color: #212121;
-    border-top: solid 2px #424242;
-    border-bottom: solid 2px #424242; } }
+    border-top: solid 5px #424242;
+    border-bottom: solid 5px #424242; } }
 
 @media only screen and (max-width: 768px) {
   body.colorscheme-dark .navigation .navigation-list .menu-separator {
@@ -222,8 +222,8 @@ body.colorscheme-dark .navigation .menu-button i:hover, body.colorscheme-dark .n
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation .navigation-list {
     background-color: #212121;
-    border-top: solid 2px #424242;
-    border-bottom: solid 2px #424242; } }
+    border-top: solid 5px #424242;
+    border-bottom: solid 5px #424242; } }
 
 @media only screen and (prefers-color-scheme: dark) and (max-width: 768px) {
   body.colorscheme-auto .navigation .navigation-list .menu-separator {
