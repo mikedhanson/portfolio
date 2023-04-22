@@ -1,4 +1,4 @@
-baseURL = "https://mikedhanson.github.io/portfolio/"
+baseURL = "https://portfolio.michaelhanson.dev"
 title = "<$Mike/>"
 theme = "hugo-coder"
 languageCode = "en"
