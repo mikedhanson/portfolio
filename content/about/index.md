@@ -21,11 +21,11 @@ I recently took a new position with the State of South Dakota as an Endpoint Arc
 
 I am passionate about technology and tinkering with hardware. I enjoy coffee more than I should and like to spend time outdoors either camping or on the water.
 
-{{< figure src="./images/hiking.png" alt="hiking" width="400" >}}
+{{< figure src="./images/hiking.jpg" alt="hiking" width="400" >}}
 
 # The Homelab.
 
-{{< figure src="./images/homelab.png" alt="hiking" width="400" >}}
+{{< figure src="./images/homelab.jpg" alt="hiking" width="400" >}}
 
 Eventually I'll do a writeup on my homelab but for now heres a picture and some details on what I'm running.
 

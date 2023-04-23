@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&lt;$Mike/&gt;</title>
+    <link>https://michaelhanson.dev/</link>
+    <description>Recent content on &lt;$Mike/&gt;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Apr 2023 19:52:42 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced PowerShell Parameter Usage and Aliases</title>
+      <link>https://michaelhanson.dev/posts/powershell-param/</link>
+      <pubDate>Mon, 17 Apr 2023 19:52:42 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/posts/powershell-param/</guid>
+      <description>PowerShell is a powerful tool for system administrators and developers alike. It allows you to automate tasks, manage systems, and work with data quickly and easily. One of the features that makes PowerShell so flexible is its parameter system, which lets you customize the behavior of commands and scripts with a wide range of options. In this blog post, we&amp;rsquo;ll take a look at some advanced PowerShell parameter usage, including aliases.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://michaelhanson.dev/education/</link>
+      <pubDate>Sun, 16 Apr 2023 18:23:41 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/education/</guid>
+      <description> { &amp;#34;Universities&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;University of South Dakota&amp;#34;, &amp;#34;alias&amp;#34;: &amp;#34;USD&amp;#34;, &amp;#34;degrees&amp;#34;: { &amp;#34;major&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Computer Science&amp;#34;, &amp;#34;start_date&amp;#34;: &amp;#34;2014-08-01&amp;#34;, &amp;#34;end_date&amp;#34;: &amp;#34;2018-05-01&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;completed&amp;#34;, &amp;#34;gpa&amp;#34;: &amp;#34;3.6&amp;#34;, &amp;#34;courses&amp;#34;: [ &amp;#34;CSC 324 Machine Learning&amp;#34;, &amp;#34;Math 216 Discrete Structures&amp;#34;, &amp;#34;CSC 350 Algorithms and Data Structures&amp;#34;, &amp;#34;CSC 480 Capstone Software Engineering&amp;#34;, &amp;#34;CSC 492 Unix Environment&amp;#34; ] }, &amp;#34;minor&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Business Administration&amp;#34;, &amp;#34;end_date&amp;#34;: &amp;#34;2018-05-01&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;completed&amp;#34; }, &amp;#34;accomplishments&amp;#34;: { &amp;#34;item&amp;#34;: &amp;#34;Dean&amp;#39;s List&amp;#34;, &amp;#34;date&amp;#34;: [&amp;#34;Spring 2017&amp;#34;, &amp;#34;Fall 2017&amp;#34;] }, &amp;#34;clubs&amp;#34;: [{ &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;Association for Computing Machinery&amp;#34; }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;National Collegiate Cyber Defense Competition&amp;#34; } ] } } } </description>
+    </item>
+    
+    <item>
+      <title>Experiences 🎓</title>
+      <link>https://michaelhanson.dev/experiences/</link>
+      <pubDate>Mon, 26 Dec 2022 18:59:36 -0600</pubDate>
+      
+      <guid>https://michaelhanson.dev/experiences/</guid>
+      <description>South Dakota: Bureau of Information and TelecommunicationsLink to headingService Delivery Endpoint Architect (June 2021 - Present) Synopsis: Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota.
+Boarding (on/off) process automations Configured OS provisioning toolset Developed custom RESTful endpoints for various toolsets Enroll endpoints into Azure AD and other MDM solutions Technology Engineer II (June 2018 – June 2021)</description>
+    </item>
+    
+    <item>
+      <title>Graylog Notifier</title>
+      <link>https://michaelhanson.dev/posts/graylog-notifier/</link>
+      <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/posts/graylog-notifier/</guid>
+      <description>GrayCordLink to headingGraylog API log parser to discord
+Graylog + Discord = GrayCordLink to headingWhy?Link to headingGraylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
+How does it work?Link to headingThe script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://michaelhanson.dev/projects/</link>
+      <pubDate>Mon, 30 May 2022 10:35:21 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/projects/</guid>
+      <description>Here&amp;rsquo;s a list of some of the open source projects I&amp;rsquo;ve worked on:
+ChocolateyManagerLink to headingI was tired of manually running chocolatey updates and wanted a more automated way for my updates to just happen in the background. If you are interested in automating your software updates, have a look at the repo.
+If you run the update script from windows task scheduler you will get a nice toast message when your updater runs.</description>
+    </item>
+    
+    <item>
+      <title>Custom DNS Names in PIhole</title>
+      <link>https://michaelhanson.dev/posts/hello-world/</link>
+      <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/posts/hello-world/</guid>
+      <description>Assuming you already have Pihole up and running, create a new .conf file in the following directory
+/etc/dnsmasq.d/yourname.conf nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2. </description>
+    </item>
+    
+    <item>
+      <title>Setting up fail2ban with LE/NGINX/WP</title>
+      <link>https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</link>
+      <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</guid>
+      <description>NOTICE:Link to headingThis tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
+1. Edit jail.localLink to headingAt the bottom of the file, add the following block of code.
+[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filtersLink to headingInside the filter.</description>
+    </item>
+    
+    <item>
+      <title>WordPress and UnRaid</title>
+      <link>https://michaelhanson.dev/posts/hosting-wp-on-unraid/</link>
+      <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
+      
+      <guid>https://michaelhanson.dev/posts/hosting-wp-on-unraid/</guid>
+      <description>High overview of how to setup a WordPress site that is hosted through Unraid.Link to headingThis blog is something for me to look back at as a resource and to possibly help someone like you out.
+1. Domain NamesLink to headingMake sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
+    </item>
+    
+    <item>
+      <title>Hi there 👋</title>
+      <link>https://michaelhanson.dev/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaelhanson.dev/about/</guid>
+      <description>$aboutMe = [PSCustomObject]@{ Name = &amp;#39;Michael&amp;#39; Languages = @(&amp;#34;PowerShell&amp;#34;, &amp;#34;C#&amp;#34;, &amp;#34;Java&amp;#34;) Location = &amp;#39;South Dakota&amp;#39; OpenToWork = $true } return $aboutMe I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.</description>
+    </item>
+    
+  </channel>
+</rss>

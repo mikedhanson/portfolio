@@ -5,52 +5,52 @@ draft: false
 ---
 
 {{<
-figure src="https://educationusa.state.gov/sites/default/files/field_hei_logo/usd_primary_logo_digital_0.png"
+figure src="./images/usd_primary_logo.png"
 alt="University of South Dakota logo"
-width="300"
-height="200"
-
+width="250"
+height="150"
 >}}
+
 
 ```json
 {
-  "Universities": {
-    "name": "University of South Dakota",
-    "alias": "USD",
-    "degrees": {
-      "major": {
-        "name": "Computer Science",
-        "start_date": "2014-08-01",
-        "end_date": "2018-05-01",
-        "status": "completed",
-        "gpa": "3.6",
-        "courses": {
-          "course1": "CSC 101",
-          "course2": "CSC 201",
-          "course3": "CSC 301",
-          "course4": "todo"
-        }
-      },
-      "minor": {
-        "name": "Business Administration",
-        "end_date": "2018-05-01",
-        "status": "completed"
-      },
-      "accomplishments": {
-        "item": "Dean's List",
-        "date": ["Spring 2017", "Fall 2017"]
-      },
-      "clubs": [
-        {
-          "id": 1,
-          "name": "Association for Computing Machinery"
-        },
-        {
-          "id": 2,
-          "name": "National Collegiate Cyber Defense Competition"
-        }
-      ]
-    }
-  }
+	"Universities": {
+		"name": "University of South Dakota",
+		"alias": "USD",
+		"degrees": {
+			"major": {
+				"name": "Computer Science",
+				"start_date": "2014-08-01",
+				"end_date": "2018-05-01",
+				"status": "completed",
+				"gpa": "3.6",
+				"courses": [
+					"CSC 324 Machine Learning",
+					"Math 216 Discrete Structures",
+					"CSC 350 Algorithms and Data Structures",
+					"CSC 480 Capstone Software Engineering",
+					"CSC 492 Unix Environment"
+				]
+			},
+			"minor": {
+				"name": "Business Administration",
+				"end_date": "2018-05-01",
+				"status": "completed"
+			},
+			"accomplishments": {
+				"item": "Dean's List",
+				"date": ["Spring 2017", "Fall 2017"]
+			},
+			"clubs": [{
+					"id": 1,
+					"name": "Association for Computing Machinery"
+				},
+				{
+					"id": 2,
+					"name": "National Collegiate Cyber Defense Competition"
+				}
+			]
+		}
+	}
 }
 ```
