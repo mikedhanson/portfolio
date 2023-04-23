@@ -20,14 +20,14 @@ if ([bool](Test-Connection $remote -Quiet -Count 1)) {
         Write-Error "Failed to build hugo site" -ErrorAction Stop
     }
     
-    if(Test-Path -Path "\\192.168.1.3\appdata\swag\www\"){
+  <#   if(Test-Path -Path $Destination){
         try {
-            Remove-Item -Path "\\192.168.1.3\appdata\swag\www\" -Force -recurse -Verbose
+            Remove-Item -Path "$Destination" -Force -recurse -Verbose
         }
         catch {
             Write-Error "Failed to clean up $Destination" -ErrorAction Stop
         }    
-    }
+    } #>
 
     <# Move files to remote #>
     try {
