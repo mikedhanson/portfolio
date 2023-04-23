@@ -2,7 +2,7 @@
 param (
     [Parameter()]
     [string]
-    $Source = "E:\Documents\Data\Code\Repos\Portfolios\hugo-portfolio\public",
+    $Source = "E:\Documents\Data\Code\Repos\Portfolios\hugo-portfolio\docs",
     
     [Parameter()]
     [string]
