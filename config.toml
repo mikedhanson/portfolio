@@ -10,9 +10,6 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 #publishDir = "docs"
 
-favicon_32 = "images/favicon-32x32.png"
-favicon_16 = "images/favicon-16x16.png"
-
 [markup.highlight]
 style = "github-dark"
 
@@ -37,6 +34,10 @@ commit = "https://github.com/mikedhanson/hugo-portfolio"
 # Right To Left, shift content direction for languagues such as Arabic
 rtl = false
 
+# icon for browser tab
+favicon_32 = "images/favicon-32x32.png"
+favicon_16 = "images/favicon-16x16.png"
+
 # Specify light/dark colorscheme
 # Supported values:
 # "auto" (use preference set by browser)
@@ -59,20 +60,73 @@ customJS = []
 
 enableTwemoji = true
 
-[params.giscus] # https://giscus.app
-  repo = "https://github.com/mikedhanson/portfolio"
-  repoID = ""
-  category = ""
-  categoryID = ""
-  mapping = ""
-  term = ""
-  strict = ""
-  reactionsEnabled = ""
-  emitMetadata = ""
-  inputPosition = ""
-  theme = ""
-  lang = ""
-  loading = ""
+#[params.giscus] # https://giscus.app
+#  repo = "mikedhanson/portfolio"
+#  repoID = "R_kgDOGjYtbQ"
+#  category = "Announcements"
+#  categoryID = "DIC_kwDOGjYtbc4CA_TR"
+#  mapping = ""
+#  reactionsEnabled = "0"
+#  emitMetadata = "0"
+#  inputPosition = "bottom"
+#  theme = "dark"
+#  lang = "en"
+#  loading = "lazy"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-2x fa-github"
+  weight = 1
+  url = "https://github.com/mikedhanson"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-2x fa-twitter"
+  weight = 2
+  url = "https://twitter.com/mikehanson1458"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-2x fa-linkedin"
+  weight = 3
+  url = "https://www.linkedin.com/in/michael-h-396129134/"
+
+[[params.social]]
+  name = "Facebook"
+  icon = "fa fa-2x fa-facebook"
+  weight = 4
+  url = "https://www.facebook.com/notMrHanson"
+
+[[languages.en.menu.main]]
+  name = "Work"
+  weight = 1
+  url = "experiences/"
+
+[[languages.en.menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+
+[[languages.en.menu.main]]
+  name = "Education"
+  weight = 3
+  url = "education/"
+
+[[languages.en.menu.main]]
+  name = "Blog"
+  weight = 4
+  url = "posts/"
+
+[[languages.en.menu.main]]
+  name = "Projects"
+  weight = 5
+  url = "projects/"
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
@@ -128,59 +182,3 @@ enableTwemoji = true
 # prefetchsrc = ["'self'"]
 # # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 # connectsrc = ["'self'", "https://www.google-analytics.com"]
-
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-author = "authors"
-
-[[params.social]]
-name = "Github"
-icon = "fa fa-2x fa-github"
-weight = 1
-url = "https://github.com/mikedhanson"
-
-[[params.social]]
-name = "Twitter"
-icon = "fa fa-2x fa-twitter"
-weight = 2
-url = "https://twitter.com/mikehanson1458"
-
-[[params.social]]
-name = "LinkedIn"
-icon = "fa fa-2x fa-linkedin"
-weight = 3
-url = "https://www.linkedin.com/in/michael-h-396129134/"
-
-[[params.social]]
-name = "Facebook"
-icon = "fa fa-2x fa-facebook"
-weight = 4
-url = "https://www.facebook.com/notMrHanson"
-
-[[languages.en.menu.main]]
-name = "Work"
-weight = 1
-url = "experiences/"
-
-[[languages.en.menu.main]]
-name = "About"
-weight = 2
-url = "about/"
-
-[[languages.en.menu.main]]
-name = "Education"
-weight = 3
-url = "education/"
-
-[[languages.en.menu.main]]
-name = "Blog"
-weight = 4
-url = "posts/"
-
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 5
-url = "projects/"
-

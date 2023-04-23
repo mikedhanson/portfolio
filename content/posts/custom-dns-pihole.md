@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2022-05-30T10:32:22-05:00
 title = "Custom DNS Names in PIhole"
 description = "First Post"
