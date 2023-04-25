@@ -25,7 +25,7 @@ info = [
     "🧑‍💻 Self-Hosting"
 ]
 
-avatarURL = "images/MeAndCait.png"
+avatarURL = "images/MeAndCait.jpg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2014

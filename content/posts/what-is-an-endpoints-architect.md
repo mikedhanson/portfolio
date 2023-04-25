@@ -1,7 +1,7 @@
 +++ 
 draft = true
 date = 2023-04-22T21:25:49-05:00
-title = ""
+title = "What is an Endpoint Architect"
 description = ""
 slug = ""
 authors = []
@@ -10,3 +10,5 @@ categories = []
 externalLink = ""
 series = []
 +++
+
+# coming soon
