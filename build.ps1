@@ -13,8 +13,9 @@ $remote = "192.168.1.3"
 
 if ([bool](Test-Connection $remote -Quiet -Count 1)) {
     <# build hugo static files #>
+    
     try {
-        hugo -D
+        hugo 
     }
     catch {
         Write-Error "Failed to build hugo site" -ErrorAction Stop

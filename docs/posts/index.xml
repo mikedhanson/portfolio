@@ -6,61 +6,7 @@
     <description>Recent content in Posts on &lt;$Mike/&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Apr 2023 21:25:49 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What is an Endpoint Architect anyway?</title>
-      <link>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</link>
-      <pubDate>Sat, 22 Apr 2023 21:25:49 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</guid>
-      <description>coming soonLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Getting started in C-Sharp</title>
-      <link>https://michaelhanson.dev/posts/getting-started-in-c#/</link>
-      <pubDate>Sat, 22 Apr 2023 21:25:31 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/posts/getting-started-in-c#/</guid>
-      <description>coming soonLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Modernizing AD Logon Scripts</title>
-      <link>https://michaelhanson.dev/posts/modernizing-logon-scripts/</link>
-      <pubDate>Sat, 22 Apr 2023 21:25:20 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/posts/modernizing-logon-scripts/</guid>
-      <description>coming soonLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Network State Monitor</title>
-      <link>https://michaelhanson.dev/posts/network-state-monitor/</link>
-      <pubDate>Sat, 22 Apr 2023 21:25:05 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/posts/network-state-monitor/</guid>
-      <description>coming soonLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Automating on-prem processes with ServiceNow</title>
-      <link>https://michaelhanson.dev/posts/automation-in-servicenow/</link>
-      <pubDate>Sat, 22 Apr 2023 21:24:31 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/posts/automation-in-servicenow/</guid>
-      <description>coming soonLink to heading</description>
-    </item>
-    
-    <item>
-      <title>Powershell Universal</title>
-      <link>https://michaelhanson.dev/posts/powershell-universal/</link>
-      <pubDate>Sat, 22 Apr 2023 21:23:56 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/posts/powershell-universal/</guid>
-      <description>coming soonLink to heading</description>
-    </item>
-    
+    <lastBuildDate>Mon, 17 Apr 2023 19:52:42 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced PowerShell Parameter Usage and Aliases</title>
       <link>https://michaelhanson.dev/posts/powershell-param/</link>
