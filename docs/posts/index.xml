@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Sat, 22 Apr 2023 21:25:49 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is an Endpoint Architect</title>
+      <title>What is an Endpoint Architect anyway?</title>
       <link>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</link>
       <pubDate>Sat, 22 Apr 2023 21:25:49 -0500</pubDate>
       
@@ -17,12 +17,12 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Getting started in C-Sharp</title>
       <link>https://michaelhanson.dev/posts/getting-started-in-c#/</link>
       <pubDate>Sat, 22 Apr 2023 21:25:31 -0500</pubDate>
       
       <guid>https://michaelhanson.dev/posts/getting-started-in-c#/</guid>
-      <description></description>
+      <description>coming soonLink to heading</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Network State Monitor</title>
       <link>https://michaelhanson.dev/posts/network-state-monitor/</link>
       <pubDate>Sat, 22 Apr 2023 21:25:05 -0500</pubDate>
       
