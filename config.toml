@@ -10,6 +10,7 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 publishDir = "docs"
 
+
 [markup.highlight]
 style = "github-dark"
 
