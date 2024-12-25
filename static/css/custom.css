@@ -1,3 +1,9 @@
-.tags{
-    
-}
+.avatar img {
+    width: 50rem; /* Your custom width */
+    height: auto;
+    border-radius: 20%; /* Your custom border-radius */
+  
+    @media only screen and (max-width: 768px) {
+      width: 12rem; /* Your custom width for small screens */
+    }
+  }
