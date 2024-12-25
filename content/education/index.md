@@ -38,10 +38,11 @@ height="150"
 				"status": "completed"
 			},
 			"accomplishments": {
-				"item": "Dean's List",
+				"name": "Dean's List",
 				"date": ["Spring 2017", "Fall 2017"]
 			},
-			"clubs": [{
+			"clubs": [
+				{
 					"id": 1,
 					"name": "Association for Computing Machinery"
 				},

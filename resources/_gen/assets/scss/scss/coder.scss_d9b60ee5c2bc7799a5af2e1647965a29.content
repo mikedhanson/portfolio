@@ -3312,10 +3312,10 @@ figure {
 .avatar img {
   width: 40rem;
   height: auto;
-  border-radius: 10%; }
+  border-radius: 15%; }
   @media only screen and (max-width: 768px) {
     .avatar img {
-      width: 30rem; } }
+      width: 10rem; } }
 .list ul {
   margin: 3.2rem 0 3.2rem 0;
   list-style: none;
