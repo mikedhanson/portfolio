@@ -13,6 +13,41 @@
   margin-top: 1.5rem;
 }
 
+.experience-list {
+  margin: 0;
+  padding: 0;
+}
+
+.experience-list__item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgb(127 127 127 / 25%);
+}
+
+.experience-list__item:first-child {
+  padding-top: 0;
+}
+
+.experience-list__item:last-child {
+  border-bottom: 0;
+}
+
+.experience-list__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.experience-list__company,
+.experience-list__date {
+  color: var(--secondary-color);
+}
+
+.experience-list__date {
+  flex-shrink: 0;
+  text-align: right;
+}
+
 .education-card-link {
   color: inherit;
   text-decoration: none;
@@ -69,4 +104,16 @@
 
 .education-json-card__body code {
   white-space: pre;
+}
+
+@media (max-width: 575.98px) {
+  .experience-list__heading {
+    display: block;
+  }
+
+  .experience-list__date {
+    display: block;
+    margin-top: 0.25rem;
+    text-align: left;
+  }
 }
