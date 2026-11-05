@@ -1,237 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-  Getting started in C-Sharp · &lt;$Mike/&gt;
-</title>
-    <meta charset="utf-8">
+
+<head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href="/images/favicon-32x32.png" type="image/gif">
 
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
 
 
-<meta name="author" content="Michael Hanson">
-<meta name="description" content="coming soonLink to heading">
-<meta name="keywords" content="blog, developer, personal">
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Getting started in C-Sharp"/>
-<meta name="twitter:description" content="coming soonLink to heading"/>
-
-<meta property="og:title" content="Getting started in C-Sharp" />
-<meta property="og:description" content="coming soonLink to heading" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://michaelhanson.dev/posts/getting-started-in-c#/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-04-22T21:25:31-05:00" />
-<meta property="article:modified_time" content="2023-04-22T21:25:31-05:00" />
-
-
-
-
-<link rel="canonical" href="https://michaelhanson.dev/posts/getting-started-in-c#/">
-
-
-<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.aeb0266560fc8bf5b0e7e21d7d1db746f6a17830649ce264b698502e9215f364.css" integrity="sha256-rrAmZWD8i/Ww5&#43;IdfR23RvaheDBknOJktphQLpIV82Q=" crossorigin="anonymous" media="screen" />
-
-
-
+<link rel="stylesheet" href="/css/font.css" media="all">
 
 
 
   
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.6bfae2e97c0f1ecfc52077aad8b41424644401e873e00d2bc6689a4014e2f76d.css" integrity="sha256-a/ri6XwPHs/FIHeq2LQUJGREAehz4A0rxmiaQBTi920=" crossorigin="anonymous" media="screen" />
+
+
+<meta property="og:url" content="https://michaelhanson.dev/posts/getting-started-in-c%23/">
+  <meta property="og:site_name" content="&lt;$Mike/&gt;">
+  <meta property="og:title" content="Getting Started with C#">
+  <meta property="og:description" content="Set up the .NET SDK, create a console app, and learn the C# basics by building and running a small program.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-04-22T21:25:31-05:00">
+    <meta property="article:modified_time" content="2023-04-22T21:25:31-05:00">
+    <meta property="article:tag" content="C#">
+    <meta property="article:tag" content=".NET">
+    <meta property="article:tag" content="Programming">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Getting Started with C#">
+  <meta name="twitter:description" content="Set up the .NET SDK, create a console app, and learn the C# basics by building and running a small program.">
+
+
+
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/language-switcher.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="Set up the .NET SDK, create a console app, and learn the C# basics by building and running a small program.">
+<link rel="stylesheet" href="/css/single.css">
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+    <link rel="stylesheet" href="/style.css">
   
 
+  <title>
+Getting Started with C# | &lt;$Mike/&gt;
 
+  </title>
+</head>
 
- 
-
-
-
-
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-<meta name="generator" content="Hugo 0.111.3">
-
-
-
-
-
-  </head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
+<body class="light">
   
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
 
 
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="/">
-      &lt;$Mike/&gt;
-    </a>
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/experiences/">Work</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/education/">Education</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/projects/">Projects</a>
-            </li>
-          
-        
-        
-      </ul>
-    
-  </section>
-</nav>
 
 
-    <div class="content">
-      
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://michaelhanson.dev/posts/getting-started-in-c#/">
-              Getting started in C-Sharp
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/images/favicon-32x32.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                &lt;$Mike/&gt;
+                
             </a>
-          </h1>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/education/" title="">
+                            
+                            Education
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/posts/" title="">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/projects/" title="">
+                            
+                            Projects
+                        </a>
+                    </li>
+                    
+                    
+
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
         </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-04-22T21:25:31-05:00">
-                April 22, 2023
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
-            </span>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Getting Started with C#</h1>
+            <div class="text-center">
+              
+              Apr 22, 2023
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
           </div>
           
+          <article class="page-content p-2">
+            <p>C# (pronounced “C sharp”) is a general-purpose programming language commonly used with .NET. You can use it for command-line tools, web services, desktop applications, games, and much more.</p>
+<p>This guide walks through creating and running a small console program. You do not need prior experience with C#, but some familiarity with using a terminal will help.</p>
+<h2 id="install-the-net-sdk">Install the .NET SDK</h2>
+<p>Install the <strong>.NET SDK</strong> for your operating system from <a href="https://dotnet.microsoft.com/download">dotnet.microsoft.com/download</a>. The SDK includes the <code>dotnet</code> command-line tools needed to create, build, and run projects. It is different from the .NET runtime alone, which is intended for running applications that have already been built.</p>
+<p>After installation, open a new terminal and check that the command is available:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>dotnet --version
+</span></span></code></pre></div><p>The command prints the installed SDK version. If the command is not recognized, reopen the terminal; if it is still missing, check that the SDK installer completed and that <code>dotnet</code> is on your <code>PATH</code>.</p>
+<p>You can write C# in any text editor. <a href="https://visualstudio.microsoft.com/">Visual Studio</a> and <a href="https://code.visualstudio.com/">Visual Studio Code</a> are two common choices; the full Visual Studio IDE and the .NET SDK are separate installations.</p>
+<h2 id="create-and-run-a-console-app">Create and run a console app</h2>
+<p>In a terminal, choose a directory where you keep projects and run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>dotnet new console -n HelloCSharp
+</span></span><span style="display:flex;"><span>cd HelloCSharp
+</span></span><span style="display:flex;"><span>dotnet run
+</span></span></code></pre></div><p>The template creates a new project named <code>HelloCSharp</code>. The first run restores any required dependencies, builds the project, and runs it. A new console app prints a greeting.</p>
+<p>Open the generated <code>Program.cs</code>. A recent .NET console template uses <strong>top-level statements</strong>, which means you can write the program without first declaring a class and a <code>Main</code> method.</p>
+<p>Replace its contents with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Console.Write(<span style="color:#e6db74">&#34;What is your name? &#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">string?</span> name = Console.ReadLine();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">string</span>.IsNullOrWhiteSpace(name))
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#e6db74">&#34;Hello, there!&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#e6db74">$&#34;Hello, {name.Trim()}!&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Run the app again:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>dotnet run
+</span></span></code></pre></div><p><code>Console.Write</code> displays a prompt without moving to the next line. <code>Console.ReadLine</code> reads user input. The variable is declared as <code>string?</code> because the user might not enter a line, and the null check is part of handling that possibility safely. The <code>$&quot;...&quot;</code> syntax creates an interpolated string, inserting the value of an expression such as <code>{name.Trim()}</code> into the text.</p>
+<h2 id="a-few-c-building-blocks">A few C# building blocks</h2>
+<h3 id="variables-and-types">Variables and types</h3>
+<p>A variable stores a value. C# checks that values are used with compatible types:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">string</span> firstName = <span style="color:#e6db74">&#34;Ada&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> completedProjects = <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> isAvailable = <span style="color:#66d9ef">true</span>;
+</span></span></code></pre></div><p>You can also let the compiler infer a local variable&rsquo;s type with <code>var</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> greeting = <span style="color:#e6db74">$&#34;Hello, {firstName}!&#34;</span>;
+</span></span></code></pre></div><p><code>var</code> is still statically typed—the compiler determines the type from the value on the right-hand side. It does not mean that the variable can freely change to any type.</p>
+<h3 id="conditions">Conditions</h3>
+<p>Use <code>if</code> when a program should choose what to do based on a condition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (completedProjects &gt; <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#e6db74">$&#34;{firstName} has completed work.&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(<span style="color:#e6db74">&#34;No completed projects yet.&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The braces mark the code that belongs to each branch. Even when a branch contains only one line, keeping braces makes changes easier to review.</p>
+<h3 id="collections-and-loops">Collections and loops</h3>
+<p>A <code>List&lt;T&gt;</code> stores a collection of values of type <code>T</code>. This example prints each language in a list:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> languages = <span style="color:#66d9ef">new</span> List&lt;<span style="color:#66d9ef">string</span>&gt; { <span style="color:#e6db74">&#34;C#&#34;</span>, <span style="color:#e6db74">&#34;PowerShell&#34;</span>, <span style="color:#e6db74">&#34;Python&#34;</span> };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">string</span> language <span style="color:#66d9ef">in</span> languages)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Console.WriteLine(language);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Most .NET types, including <code>List&lt;T&gt;</code>, live in namespaces. The standard console template includes common <code>System</code> namespaces through implicit usings, so <code>List&lt;string&gt;</code> works without an extra <code>using</code> line in a typical new project.</p>
+<h3 id="methods">Methods</h3>
+<p>A method gives a named piece of work a place in your program. It can accept inputs and return a result:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">string</span> CreateGreeting(<span style="color:#66d9ef">string</span> name)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">$&#34;Hello, {name}!&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You can call it with <code>CreateGreeting(&quot;Ada&quot;)</code>. The <code>string</code> before the method name is its return type; the <code>string name</code> inside the parentheses is a parameter.</p>
+<h2 id="build-and-run">Build and run</h2>
+<p>While <code>dotnet run</code> is convenient during development, the CLI also exposes the individual steps:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>dotnet build
+</span></span><span style="display:flex;"><span>dotnet run --no-build
+</span></span></code></pre></div><p><code>dotnet build</code> checks and compiles the project. <code>dotnet run --no-build</code> runs the most recently built version. Build errors point to a source file and line number; read the first error carefully, make a small correction, and build again.</p>
+<h2 id="where-to-go-next">Where to go next</h2>
+<p>Once the console app makes sense, useful next steps include:</p>
+<ul>
+<li>Learn about classes, interfaces, and records to organize related data and behavior.</li>
+<li>Practice working with collections, files, and JSON.</li>
+<li>Learn <code>try</code>/<code>catch</code> and input validation for operations that can fail.</li>
+<li>Add unit tests to check behavior as the program grows.</li>
+<li>Explore the official <a href="https://learn.microsoft.com/dotnet/">.NET documentation</a> and <a href="https://learn.microsoft.com/dotnet/csharp/">C# documentation</a>.</li>
+</ul>
+<p>The best way to learn is to make a small program that solves a problem you understand. Get the basic version working, then improve it one feature at a time.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
           
+          <aside class="toc">
+            <h5>Table Of Contents</h5>
+            <div class="toc-content">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install-the-net-sdk">Install the .NET SDK</a></li>
+    <li><a href="#create-and-run-a-console-app">Create and run a console app</a></li>
+    <li><a href="#a-few-c-building-blocks">A few C# building blocks</a>
+      <ul>
+        <li><a href="#variables-and-types">Variables and types</a></li>
+        <li><a href="#conditions">Conditions</a></li>
+        <li><a href="#collections-and-loops">Collections and loops</a></li>
+        <li><a href="#methods">Methods</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-and-run">Build and run</a></li>
+    <li><a href="#where-to-go-next">Where to go next</a></li>
+  </ul>
+</nav>
+            </div>
+          </aside>
           
         </div>
-      </header>
-
-      <div class="post-content">
-        
-        <h1 id="coming-soon">
-  coming soon
-  <a class="heading-link" href="#coming-soon">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h1>
-
       </div>
-
-
-      <footer>
-        
-
-
-        
-      
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
-
     </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
 
-    <footer class="footer">
-  <section class="container">
-    ©
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() { scrollFunction(); };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if (stickyNavBar && stickySideBarElem) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else if (stickySideBarElem) {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
     
-      2014 -
+
+
+  
+
+ 
+ 
+<div class="container py-3" id="recent-posts">
     
-    2023
-     Michael Hanson 
     
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/aiedge-summit-second-brain-stack/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="What I Learned at AI Edge Summit: The Second Brain Stack">What I Learned at AI Edge …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>I recently attended AI Edge Summit in Sioux Falls, where I joined The Second Brain Stack workshop led by Dan Klosterman of EdgeTeam. It was a great opportunity to learn, think about where AI is heading, and spend time with ideas that are already changing how people approach their work.
+The workshop …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">October 29, 2026</span>
+                    <a href="/posts/aiedge-summit-second-brain-stack/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/what-is-an-endpoints-architect/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="What is an Endpoint Architect anyway?">What is an Endpoint …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Most people just want their work computer to work. They need to sign in, open the applications they use, connect to the right resources, and get on with their day. Making that experience reliable and secure across an entire organization takes more than choosing a laptop or installing software. It …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">April 22, 2023</span>
+                    <a href="/posts/what-is-an-endpoints-architect/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/getting-started-in-c%23/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Getting Started with C#">Getting Started with C#</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>C# (pronounced “C sharp”) is a general-purpose programming language commonly used with .NET. You can use it for command-line tools, web services, desktop applications, games, and much more.
+This guide walks through creating and running a small console program. You do not need prior experience with …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">April 22, 2023</span>
+                    <a href="/posts/getting-started-in-c%23/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
     
+    <span class="px-1">
+        <a href="https://github.com/mikedhanson" target="_blank" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/michael-h-396129134/" target="_blank" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <a href="https://twitter.com/mikehanson1458" target="_blank" aria-label="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <path fill="#03a9f4"
+                d="M42,37c0,2.762-2.239,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.761,0,5,2.238,5,5 V37z" />
+            <path fill="#fff"
+                d="M36,17.12c-0.882,0.391-1.999,0.758-3,0.88c1.018-0.604,2.633-1.862,3-3 c-0.951,0.559-2.671,1.156-3.793,1.372C31.311,15.422,30.033,15,28.617,15C25.897,15,24,17.305,24,20v2c-4,0-7.9-3.047-10.327-6 c-0.427,0.721-0.667,1.565-0.667,2.457c0,1.819,1.671,3.665,2.994,4.543c-0.807-0.025-2.335-0.641-3-1c0,0.016,0,0.036,0,0.057 c0,2.367,1.661,3.974,3.912,4.422C16.501,26.592,16,27,14.072,27c0.626,1.935,3.773,2.958,5.928,3c-1.686,1.307-4.692,2-7,2 c-0.399,0-0.615,0.022-1-0.023C14.178,33.357,17.22,34,20,34c9.057,0,14-6.918,14-13.37c0-0.212-0.007-0.922-0.018-1.13 C34.95,18.818,35.342,18.104,36,17.12" />
+        </svg>
+    </a>
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a href="https://michaelhanson.dev/" title="&lt;$Mike/&gt;">
+                        <img alt="Footer logo" src="/images/favicon-32x32.png"
+                            height="40px" width="40px">
+                    </a>
+                </div>
+            
+            &copy; 2026  All Rights Reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
   </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.min.1d6b8dccd59d51a91a23d046df39b2ccee9c591bb66b8281c194c4426f0dd8a4.js" integrity="sha256-HWuNzNWdUakaI9BG3zmyzO6cWRu2a4KBwZTEQm8N2KQ="></script>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 </body>
 
 </html>

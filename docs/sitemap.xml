@@ -3,34 +3,94 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://michaelhanson.dev/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
+    <lastmod>2026-11-05T10:45:00-06:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/education/</loc>
+    <lastmod>2026-11-05T10:45:00-06:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/projects/</loc>
+    <lastmod>2026-11-05T10:35:00-06:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/ai/</loc>
+    <lastmod>2026-10-29T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/automation/</loc>
+    <lastmod>2026-10-29T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/</loc>
+    <lastmod>2026-10-29T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/professional-development/</loc>
+    <lastmod>2026-10-29T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/</loc>
+    <lastmod>2026-10-29T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</loc>
+    <lastmod>2026-10-29T12:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/architecture/</loc>
+    <lastmod>2023-04-22T21:25:49-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/categories/</loc>
+    <lastmod>2023-04-22T21:25:49-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/endpoint-management/</loc>
+    <lastmod>2023-04-22T21:25:49-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/security/</loc>
+    <lastmod>2023-04-22T21:25:49-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/categories/technology/</loc>
+    <lastmod>2023-04-22T21:25:49-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</loc>
+    <lastmod>2023-04-22T21:25:49-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/.net/</loc>
+    <lastmod>2023-04-22T21:25:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/c%23/</loc>
+    <lastmod>2023-04-22T21:25:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/categories/code/</loc>
+    <lastmod>2023-04-22T21:25:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/getting-started-in-c%23/</loc>
+    <lastmod>2023-04-22T21:25:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/programming/</loc>
+    <lastmod>2023-04-22T21:25:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/modernizing-logon-scripts/</loc>
+    <lastmod>2023-04-22T21:25:20-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/networking/</loc>
+    <lastmod>2023-04-22T21:25:20-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/windows/</loc>
+    <lastmod>2023-04-22T21:25:20-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/network-state-monitor/</loc>
+    <lastmod>2023-04-22T21:25:05-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/automation-in-servicenow/</loc>
+    <lastmod>2023-04-22T21:24:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/powershell/</loc>
+    <lastmod>2023-04-22T21:24:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/servicenow/</loc>
+    <lastmod>2023-04-22T21:24:31-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/tags/powershell-universal/</loc>
+    <lastmod>2023-04-22T21:23:56-05:00</lastmod>
+  </url><url>
+    <loc>https://michaelhanson.dev/posts/powershell-universal/</loc>
+    <lastmod>2023-04-22T21:23:56-05:00</lastmod>
   </url><url>
     <loc>https://michaelhanson.dev/posts/powershell-param/</loc>
     <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/authors/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/categories/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/categories/code/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/authors/michael-hanson/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/posts/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/tags/powershell/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/tags/</loc>
-    <lastmod>2023-04-17T19:52:42-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/education/</loc>
-    <lastmod>2023-04-16T18:23:41-05:00</lastmod>
   </url><url>
     <loc>https://michaelhanson.dev/experiences/</loc>
     <lastmod>2022-12-26T18:59:36-06:00</lastmod>
@@ -46,9 +106,6 @@
   </url><url>
     <loc>https://michaelhanson.dev/posts/graylog-notifier/</loc>
     <lastmod>2022-06-11T11:44:30-05:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/projects/</loc>
-    <lastmod>2022-05-30T10:35:21-05:00</lastmod>
   </url><url>
     <loc>https://michaelhanson.dev/posts/hello-world/</loc>
     <lastmod>2022-05-30T10:32:22-05:00</lastmod>
@@ -76,7 +133,5 @@
   </url><url>
     <loc>https://michaelhanson.dev/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://michaelhanson.dev/series/</loc>
   </url>
 </urlset>

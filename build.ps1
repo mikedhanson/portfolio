@@ -1,43 +1,84 @@
-[CmdletBinding()]
+[CmdletBinding(DefaultParameterSetName = 'Build')]
 param (
-    [Parameter()]
-    [string]
-    $Source = "E:\Documents\Data\Code\Repos\Portfolios\hugo-portfolio\docs",
-    
-    [Parameter()]
-    [string]
-    $Destination = "\\192.168.1.3\appdata\swag\www\portfolio"
+    [Parameter(ParameterSetName = 'Build')]
+    [switch]$Build,
+
+    [Parameter(ParameterSetName = 'Watch')]
+    [switch]$Watch,
+
+    [Parameter(ParameterSetName = 'ProfilePreview')]
+    [switch]$ProfilePreview,
+
+    [Alias('DeployProfile')]
+    [Parameter(ParameterSetName = 'Deploy')]
+    [switch]$Deploy,
+
+    [string]$Destination = "\\unraid.lan\appdata\swag\www\portfolio\docs"
 )
 
-$remote = "192.168.1.3"
-
-if ([bool](Test-Connection $remote -Quiet -Count 1)) {
-    <# build hugo static files #>
-    
-    try {
-        hugo 
-    }
-    catch {
-        Write-Error "Failed to build hugo site" -ErrorAction Stop
-    }
-    
-  <#   if(Test-Path -Path $Destination){
-        try {
-            Remove-Item -Path "$Destination" -Force -recurse -Verbose
+$hugoCommand = Get-Command hugo -CommandType Application -ErrorAction SilentlyContinue
+$hugoPath = if ($hugoCommand) { $hugoCommand.Source }
+else {
+    $wingetPackages = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages'
+    $hugoPackage = Get-ChildItem -LiteralPath $wingetPackages -Directory -Filter 'Hugo.Hugo.Extended_*' -ErrorAction SilentlyContinue |
+        Select-Object -First 1
+    if ($hugoPackage) {
+        $candidate = Join-Path $hugoPackage.FullName 'hugo.exe'
+        if (Test-Path -LiteralPath $candidate -PathType Leaf) {
+            $candidate
         }
-        catch {
-            Write-Error "Failed to clean up $Destination" -ErrorAction Stop
-        }    
-    } #>
-
-    <# Move files to remote #>
-    try {
-        Copy-Item -Path $Source -Destination $Destination -Force -Recurse -Verbose
-    }
-    catch {
-        Write-Error "Failed to move docs from $source to $destination Error: $_" -ErrorAction Stop
     }
 }
-else {
-    Write-Error "Failed to connect to $remote" -ErrorAction stop
+
+if (-not $hugoPath) {
+    throw "Hugo was not found. Install Hugo and ensure it is available on PATH."
+}
+
+if ($PSCmdlet.ParameterSetName -eq 'Watch') {
+    & $hugoPath server --source $PSScriptRoot --config (Join-Path $PSScriptRoot 'hugo-profile.yaml') --baseURL 'http://localhost:1313/' -D --renderToMemory --bind 127.0.0.1 --port 1313
+    if ($LASTEXITCODE -ne 0) {
+        throw "Hugo Profile preview server exited with code $LASTEXITCODE."
+    }
+    return
+}
+
+if ($PSCmdlet.ParameterSetName -eq 'ProfilePreview') {
+    & $hugoPath server --source $PSScriptRoot --config (Join-Path $PSScriptRoot 'hugo-profile.yaml') -D --renderToMemory --bind 127.0.0.1 --port 1314
+    if ($LASTEXITCODE -ne 0) {
+        throw "Hugo Profile preview server exited with code $LASTEXITCODE."
+    }
+    return
+}
+
+$hugoArguments = @(
+    '--source', $PSScriptRoot,
+    '--config', (Join-Path $PSScriptRoot 'hugo-profile.yaml'),
+    '--baseURL', 'https://michaelhanson.dev/',
+    '--cleanDestinationDir'
+)
+$deployProfile = $PSCmdlet.ParameterSetName -eq 'Deploy'
+
+& $hugoPath @hugoArguments
+if ($LASTEXITCODE -ne 0) {
+    throw "Hugo build failed with exit code $LASTEXITCODE."
+}
+
+if ($deployProfile) {
+    $outputDirectory = Join-Path $PSScriptRoot 'docs'
+    if (-not (Test-Path -LiteralPath $outputDirectory -PathType Container)) {
+        throw "Hugo output directory was not found: $outputDirectory"
+    }
+
+    try {
+        New-Item -ItemType Directory -Path $Destination -Force -ErrorAction Stop | Out-Null
+        Get-ChildItem -LiteralPath $outputDirectory -Force -ErrorAction Stop |
+            ForEach-Object {
+                Copy-Item -LiteralPath $_.FullName -Destination $Destination -Recurse -Force -ErrorAction Stop
+            }
+    }
+    catch {
+        throw "Failed to copy Hugo output from '$outputDirectory' to '$Destination': $_"
+    }
+
+    Write-Host "Deployed Hugo output from '$outputDirectory' to '$Destination'"
 }

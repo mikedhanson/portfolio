@@ -1,0 +1,137 @@
+baseURL: "http://localhost:1314/"
+languageCode: "en-us"
+title: "<$Mike/>"
+theme: hugo-profile
+layoutDir: layouts-profile
+publishDir: docs
+enableEmoji: true
+paginate: 20
+
+cascade:
+  tags: []
+
+menu:
+  main:
+    - identifier: education
+      name: Education
+      url: /education/
+      weight: 1
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 2
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 3
+
+params:
+  title: "Michael Hanson"
+  description: "Endpoint Architect focused on automation, security, and self-hosting."
+  favicon: "/images/favicon-32x32.png"
+  customCSS: true
+  animate: true
+
+  navbar:
+    brandName: "<$Mike/>"
+    disableSearch: true
+    menus:
+      disableEducation: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Michael Hanson"
+    subtitle: |-
+      Endpoint Architect
+      Automation
+      Security
+    content: "I design technology solutions, automate endpoint management, and build tools for the systems I run."
+    image: "/images/MeAndCait.jpg"
+    roundImage: false
+    bottomImage:
+      enable: false
+    button:
+      enable: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: "fab fa-github"
+          name: "GitHub"
+          url: "https://github.com/mikedhanson"
+        - icon: "fab fa-linkedin"
+          name: "LinkedIn"
+          url: "https://www.linkedin.com/in/michael-h-396129134/"
+        - icon: "fab fa-twitter"
+          name: "Twitter"
+          url: "https://twitter.com/mikehanson1458"
+
+  about:
+    enable: true
+    title: "About Me"
+    content: >-
+      I'm an Endpoint Architect with the State of South Dakota. I enjoy
+      automating technology, building tools, and running a self-hosted home
+      network.
+    skills:
+      enable: true
+      title: "Areas I work in:"
+      items:
+        - "Endpoint management and automation"
+        - "PowerShell, Python, and C#"
+        - "Security and vulnerability remediation"
+        - "Unraid and self-hosted services"
+
+  experience:
+    enable: true
+    items:
+      - company: "State of South Dakota"
+        companyUrl: "https://sd.gov/"
+        jobs:
+          - name: "Endpoint Architect"
+            date: "June 2021 – Present"
+            content: "Design and prototype technology solutions, automate employee onboarding and offboarding, and develop REST APIs and endpoint-management workflows."
+          - name: "Technology Engineer II"
+            date: "June 2018 – June 2021"
+            content: "Automated employee offboarding, implemented operating-system deployments, developed vulnerability remediations, and standardized patching."
+          - name: "Network Technologies Intern"
+            date: "May 2016 – January 2018"
+            content: "Installed and configured network infrastructure and supported data-center and school network operations."
+      - company: "Smart Software Solutions"
+        jobs:
+          - name: "Quality Assurance"
+            date: "February 2016 – Present"
+            content: "Develop and maintain automation scripts, document issues, and collaborate with developers."
+
+  education:
+    enable: true
+    index: true
+    items:
+      - title: "Bachelor of Science, Computer Science"
+        school:
+          name: "University of South Dakota"
+        date: "2014 – 2018"
+        content: "Minor in Business Administration. Dean's List; National Collegiate Cyber Defense Competition."
+
+  projects:
+    enable: false
+
+  achievements:
+    enable: false
+
+  contact:
+    enable: false
+
+  footer:
+    recentPosts:
+      path: "posts"
+      count: 3
+      title: "Recent Posts"
+      enable: true
+      disableFeaturedImage: true
+    socialNetworks:
+      github: "https://github.com/mikedhanson"
+      linkedin: "https://www.linkedin.com/in/michael-h-396129134/"
+      twitter: "https://twitter.com/mikehanson1458"

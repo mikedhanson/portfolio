@@ -11,7 +11,7 @@ externalLink = ""
 series = []
 +++
 
-# High overview of how to setup a WordPress site that is hosted through Unraid.
+## Overview
 
 This blog is something for me to look back at as a resource and to possibly help someone like you out. 
 

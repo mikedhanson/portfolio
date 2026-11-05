@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on &lt;$Mike/&gt;</title>
+    <link>https://michaelhanson.dev/tags/networking/</link>
+    <description>Recent content in Networking on &lt;$Mike/&gt;</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Apr 2023 21:25:20 -0500</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modernizing Logon Scripts: From Fragile Startup Tasks to Event-Driven Drive Mapping</title>
+      <link>https://michaelhanson.dev/posts/modernizing-logon-scripts/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:20 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/modernizing-logon-scripts/</guid>
+      <description>For years, our network drive mappings depended on traditional logon scripts. They worked—until they didn&amp;rsquo;t. Timing issues during sign-in, VPN race conditions, limited diagnostics, and hard-to-reproduce user-session bugs made a simple task difficult to support.&#xA;We modernized that model into a more resilient, testable system built around a Windows service, a user-context background host, and scriptable CLI and PowerShell tooling.&#xA;Why logon scripts became a bottleneck Classic logon scripts assume that the network is ready at exactly the right moment: when the user signs in.</description>
+    </item>
+    <item>
+      <title>Network State Monitor</title>
+      <link>https://michaelhanson.dev/posts/network-state-monitor/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:05 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/network-state-monitor/</guid>
+      <description>NetworkStateMonitorService is a Windows service that continuously classifies a computer&amp;rsquo;s network connectivity and publishes network transitions for downstream automation, such as background drive mapping.&#xA;The service is a state detector and event producer, not a user interface. It runs headlessly, checks network posture on a timer and in response to operating-system network events, and makes state available through Windows Event Log and named-pipe IPC.&#xA;What the service does At runtime, the monitor:</description>
+    </item>
+  </channel>
+</rss>

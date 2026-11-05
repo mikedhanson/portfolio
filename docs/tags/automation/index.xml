@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on &lt;$Mike/&gt;</title>
+    <link>https://michaelhanson.dev/tags/automation/</link>
+    <description>Recent content in Automation on &lt;$Mike/&gt;</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2026 12:00:00 -0500</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I Learned at AI Edge Summit: The Second Brain Stack</title>
+      <link>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</link>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</guid>
+      <description>I recently attended AI Edge Summit in Sioux Falls, where I joined The Second Brain Stack workshop led by Dan Klosterman of EdgeTeam. It was a great opportunity to learn, think about where AI is heading, and spend time with ideas that are already changing how people approach their work.&#xA;The workshop focused on moving beyond one prompt in one chat at a time: coordinating multiple AI agents, giving them shared context, and putting guardrails in place so their work can be reviewed and trusted.</description>
+    </item>
+    <item>
+      <title>What is an Endpoint Architect anyway?</title>
+      <link>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:49 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</guid>
+      <description>Most people just want their work computer to work. They need to sign in, open the applications they use, connect to the right resources, and get on with their day. Making that experience reliable and secure across an entire organization takes more than choosing a laptop or installing software. It takes a plan for how devices are set up, managed, protected, updated, supported, and eventually retired.&#xA;That is where endpoint architecture comes in.</description>
+    </item>
+    <item>
+      <title>Modernizing Logon Scripts: From Fragile Startup Tasks to Event-Driven Drive Mapping</title>
+      <link>https://michaelhanson.dev/posts/modernizing-logon-scripts/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:20 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/modernizing-logon-scripts/</guid>
+      <description>For years, our network drive mappings depended on traditional logon scripts. They worked—until they didn&amp;rsquo;t. Timing issues during sign-in, VPN race conditions, limited diagnostics, and hard-to-reproduce user-session bugs made a simple task difficult to support.&#xA;We modernized that model into a more resilient, testable system built around a Windows service, a user-context background host, and scriptable CLI and PowerShell tooling.&#xA;Why logon scripts became a bottleneck Classic logon scripts assume that the network is ready at exactly the right moment: when the user signs in.</description>
+    </item>
+    <item>
+      <title>Network State Monitor</title>
+      <link>https://michaelhanson.dev/posts/network-state-monitor/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:05 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/network-state-monitor/</guid>
+      <description>NetworkStateMonitorService is a Windows service that continuously classifies a computer&amp;rsquo;s network connectivity and publishes network transitions for downstream automation, such as background drive mapping.&#xA;The service is a state detector and event producer, not a user interface. It runs headlessly, checks network posture on a timer and in response to operating-system network events, and makes state available through Windows Event Log and named-pipe IPC.&#xA;What the service does At runtime, the monitor:</description>
+    </item>
+    <item>
+      <title>Automating on-prem processes with ServiceNow</title>
+      <link>https://michaelhanson.dev/posts/automation-in-servicenow/</link>
+      <pubDate>Sat, 22 Apr 2023 21:24:31 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/automation-in-servicenow/</guid>
+      <description>ServiceNow can orchestrate on-premises operations reliably when it is treated as a workflow control plane rather than an execution engine. A proven pattern is for ServiceNow Flow Designer to handle approvals and state transitions, a MID Server to broker network-local traffic, and an internal automation runtime—such as PowerShell-based workers—to perform privileged actions in Active Directory, file services, or endpoint infrastructure.&#xA;Reference architecture Requester -&amp;gt; Service Catalog Item -&amp;gt; Flow Designer -&amp;gt; Action/Subflow | v REST Message (MID) | v Internal API Endpoint | v Job Queue + Worker (PowerShell/Runbook) | v AD / DNS / PKI / File / Endpoint systems | v Status callback to ServiceNow record Design principles Asynchronous by default: Return immediately with a correlation ID, then update task or work notes as the job progresses.</description>
+    </item>
+    <item>
+      <title>PowerShell Universal as an Enterprise Automation Platform</title>
+      <link>https://michaelhanson.dev/posts/powershell-universal/</link>
+      <pubDate>Sat, 22 Apr 2023 21:23:56 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/powershell-universal/</guid>
+      <description>PowerShell Universal (PSU) is most effective when used as a thin automation control plane: API endpoints receive validated requests, jobs execute isolated scripts, and standardized responses make downstream orchestration deterministic. In enterprise operations, this enables repeatable automation for identity lifecycle, endpoint management, and service request fulfillment without embedding business logic directly in ticketing tools.&#xA;Core runtime model PSU provides three primitives that map cleanly to production workflows:&#xA;Endpoints: Synchronous API surfaces for intake, validation, and job dispatch.</description>
+    </item>
+  </channel>
+</rss>

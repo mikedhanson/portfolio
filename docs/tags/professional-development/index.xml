@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Professional Development on &lt;$Mike/&gt;</title>
+    <link>https://michaelhanson.dev/tags/professional-development/</link>
+    <description>Recent content in Professional Development on &lt;$Mike/&gt;</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2026 12:00:00 -0500</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/tags/professional-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I Learned at AI Edge Summit: The Second Brain Stack</title>
+      <link>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</link>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</guid>
+      <description>I recently attended AI Edge Summit in Sioux Falls, where I joined The Second Brain Stack workshop led by Dan Klosterman of EdgeTeam. It was a great opportunity to learn, think about where AI is heading, and spend time with ideas that are already changing how people approach their work.&#xA;The workshop focused on moving beyond one prompt in one chat at a time: coordinating multiple AI agents, giving them shared context, and putting guardrails in place so their work can be reviewed and trusted.</description>
+    </item>
+  </channel>
+</rss>

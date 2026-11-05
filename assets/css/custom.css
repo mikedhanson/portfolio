@@ -1,0 +1,21 @@
+.avatar img {
+  width: 26rem;
+  height: 26rem;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.about h2 {
+  width: max-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar img {
+    width: 18rem;
+    height: 18rem;
+  }
+}

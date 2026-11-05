@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell Universal on &lt;$Mike/&gt;</title>
+    <link>https://michaelhanson.dev/tags/powershell-universal/</link>
+    <description>Recent content in PowerShell Universal on &lt;$Mike/&gt;</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Apr 2023 21:23:56 -0500</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/tags/powershell-universal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell Universal as an Enterprise Automation Platform</title>
+      <link>https://michaelhanson.dev/posts/powershell-universal/</link>
+      <pubDate>Sat, 22 Apr 2023 21:23:56 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/powershell-universal/</guid>
+      <description>PowerShell Universal (PSU) is most effective when used as a thin automation control plane: API endpoints receive validated requests, jobs execute isolated scripts, and standardized responses make downstream orchestration deterministic. In enterprise operations, this enables repeatable automation for identity lifecycle, endpoint management, and service request fulfillment without embedding business logic directly in ticketing tools.&#xA;Core runtime model PSU provides three primitives that map cleanly to production workflows:&#xA;Endpoints: Synchronous API surfaces for intake, validation, and job dispatch.</description>
+    </item>
+  </channel>
+</rss>

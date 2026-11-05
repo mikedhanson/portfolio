@@ -4,80 +4,156 @@
     <title>Tags on &lt;$Mike/&gt;</title>
     <link>https://michaelhanson.dev/tags/</link>
     <description>Recent content in Tags on &lt;$Mike/&gt;</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 17 Apr 2023 19:52:42 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2026 12:00:00 -0500</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>powershell</title>
+      <title>AI</title>
+      <link>https://michaelhanson.dev/tags/ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>https://michaelhanson.dev/tags/automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Professional Development</title>
+      <link>https://michaelhanson.dev/tags/professional-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/professional-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architecture</title>
+      <link>https://michaelhanson.dev/tags/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Endpoint Management</title>
+      <link>https://michaelhanson.dev/tags/endpoint-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/endpoint-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://michaelhanson.dev/tags/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>.NET</title>
+      <link>https://michaelhanson.dev/tags/.net/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/.net/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>https://michaelhanson.dev/tags/c%23/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://michaelhanson.dev/tags/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://michaelhanson.dev/tags/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://michaelhanson.dev/tags/windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell</title>
       <link>https://michaelhanson.dev/tags/powershell/</link>
-      <pubDate>Mon, 17 Apr 2023 19:52:42 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/powershell/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>ServiceNow</title>
+      <link>https://michaelhanson.dev/tags/servicenow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/servicenow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PowerShell Universal</title>
+      <link>https://michaelhanson.dev/tags/powershell-universal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://michaelhanson.dev/tags/powershell-universal/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Api</title>
       <link>https://michaelhanson.dev/tags/api/</link>
-      <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/api/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Bot</title>
       <link>https://michaelhanson.dev/tags/bot/</link>
-      <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/bot/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Discord</title>
       <link>https://michaelhanson.dev/tags/discord/</link>
-      <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/discord/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>LetsEncrypt</title>
       <link>https://michaelhanson.dev/tags/letsencrypt/</link>
-      <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/letsencrypt/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Nginx</title>
       <link>https://michaelhanson.dev/tags/nginx/</link>
-      <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/nginx/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>WordPress</title>
       <link>https://michaelhanson.dev/tags/wordpress/</link>
-      <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/wordpress/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Unraid</title>
       <link>https://michaelhanson.dev/tags/unraid/</link>
-      <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://michaelhanson.dev/tags/unraid/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

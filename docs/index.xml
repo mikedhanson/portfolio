@@ -4,98 +4,121 @@
     <title>&lt;$Mike/&gt;</title>
     <link>https://michaelhanson.dev/</link>
     <description>Recent content on &lt;$Mike/&gt;</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 17 Apr 2023 19:52:42 -0500</lastBuildDate><atom:link href="https://michaelhanson.dev/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Nov 2026 10:45:00 -0600</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Education</title>
+      <link>https://michaelhanson.dev/education/</link>
+      <pubDate>Thu, 05 Nov 2026 10:45:00 -0600</pubDate>
+      <guid>https://michaelhanson.dev/education/</guid>
+      <description>University of South Dakota Bachelor of Science in Computer Science 2014–2018 · GPA: 3.6&#xA;Minor in Business Administration&#xA;My undergraduate studies combined software development and computer science fundamentals with practical experience working in teams and solving technical problems.&#xA;Core areas of study Algorithms and data structures: organizing information and reasoning about efficient solutions. Discrete structures: logic, sets, relations, and mathematical foundations used in computing. Machine learning: introductory concepts for building systems that learn from data.</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://michaelhanson.dev/projects/</link>
+      <pubDate>Thu, 05 Nov 2026 10:35:00 -0600</pubDate>
+      <guid>https://michaelhanson.dev/projects/</guid>
+      <description>Here are a few projects that reflect the work I enjoy: endpoint automation, security, and self-hosted tools.&#xA;Current projects Browser Extension Manager A Chrome extension for reviewing installed extensions, understanding permission risks, and managing extension profiles.&#xA;OSDCloud PowerShell scripts for Windows deployment and device-preparation workflows using OSDCloud.&#xA;Home Assistant iQua Softener A custom Home Assistant integration that brings data from supported iQua app-connected water softeners into Home Assistant.&#xA;Unraid Templates Custom Unraid application templates, including a template for PowerShell Universal.</description>
+    </item>
+    <item>
+      <title>What I Learned at AI Edge Summit: The Second Brain Stack</title>
+      <link>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</link>
+      <pubDate>Thu, 29 Oct 2026 12:00:00 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/aiedge-summit-second-brain-stack/</guid>
+      <description>I recently attended AI Edge Summit in Sioux Falls, where I joined The Second Brain Stack workshop led by Dan Klosterman of EdgeTeam. It was a great opportunity to learn, think about where AI is heading, and spend time with ideas that are already changing how people approach their work.&#xA;The workshop focused on moving beyond one prompt in one chat at a time: coordinating multiple AI agents, giving them shared context, and putting guardrails in place so their work can be reviewed and trusted.</description>
+    </item>
+    <item>
+      <title>What is an Endpoint Architect anyway?</title>
+      <link>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:49 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/what-is-an-endpoints-architect/</guid>
+      <description>Most people just want their work computer to work. They need to sign in, open the applications they use, connect to the right resources, and get on with their day. Making that experience reliable and secure across an entire organization takes more than choosing a laptop or installing software. It takes a plan for how devices are set up, managed, protected, updated, supported, and eventually retired.&#xA;That is where endpoint architecture comes in.</description>
+    </item>
+    <item>
+      <title>Getting Started with C#</title>
+      <link>https://michaelhanson.dev/posts/getting-started-in-c%23/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:31 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/getting-started-in-c%23/</guid>
+      <description>C# (pronounced “C sharp”) is a general-purpose programming language commonly used with .NET. You can use it for command-line tools, web services, desktop applications, games, and much more.&#xA;This guide walks through creating and running a small console program. You do not need prior experience with C#, but some familiarity with using a terminal will help.&#xA;Install the .NET SDK Install the .NET SDK for your operating system from dotnet.microsoft.com/download. The SDK includes the dotnet command-line tools needed to create, build, and run projects.</description>
+    </item>
+    <item>
+      <title>Modernizing Logon Scripts: From Fragile Startup Tasks to Event-Driven Drive Mapping</title>
+      <link>https://michaelhanson.dev/posts/modernizing-logon-scripts/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:20 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/modernizing-logon-scripts/</guid>
+      <description>For years, our network drive mappings depended on traditional logon scripts. They worked—until they didn&amp;rsquo;t. Timing issues during sign-in, VPN race conditions, limited diagnostics, and hard-to-reproduce user-session bugs made a simple task difficult to support.&#xA;We modernized that model into a more resilient, testable system built around a Windows service, a user-context background host, and scriptable CLI and PowerShell tooling.&#xA;Why logon scripts became a bottleneck Classic logon scripts assume that the network is ready at exactly the right moment: when the user signs in.</description>
+    </item>
+    <item>
+      <title>Network State Monitor</title>
+      <link>https://michaelhanson.dev/posts/network-state-monitor/</link>
+      <pubDate>Sat, 22 Apr 2023 21:25:05 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/network-state-monitor/</guid>
+      <description>NetworkStateMonitorService is a Windows service that continuously classifies a computer&amp;rsquo;s network connectivity and publishes network transitions for downstream automation, such as background drive mapping.&#xA;The service is a state detector and event producer, not a user interface. It runs headlessly, checks network posture on a timer and in response to operating-system network events, and makes state available through Windows Event Log and named-pipe IPC.&#xA;What the service does At runtime, the monitor:</description>
+    </item>
+    <item>
+      <title>Automating on-prem processes with ServiceNow</title>
+      <link>https://michaelhanson.dev/posts/automation-in-servicenow/</link>
+      <pubDate>Sat, 22 Apr 2023 21:24:31 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/automation-in-servicenow/</guid>
+      <description>ServiceNow can orchestrate on-premises operations reliably when it is treated as a workflow control plane rather than an execution engine. A proven pattern is for ServiceNow Flow Designer to handle approvals and state transitions, a MID Server to broker network-local traffic, and an internal automation runtime—such as PowerShell-based workers—to perform privileged actions in Active Directory, file services, or endpoint infrastructure.&#xA;Reference architecture Requester -&amp;gt; Service Catalog Item -&amp;gt; Flow Designer -&amp;gt; Action/Subflow | v REST Message (MID) | v Internal API Endpoint | v Job Queue + Worker (PowerShell/Runbook) | v AD / DNS / PKI / File / Endpoint systems | v Status callback to ServiceNow record Design principles Asynchronous by default: Return immediately with a correlation ID, then update task or work notes as the job progresses.</description>
+    </item>
+    <item>
+      <title>PowerShell Universal as an Enterprise Automation Platform</title>
+      <link>https://michaelhanson.dev/posts/powershell-universal/</link>
+      <pubDate>Sat, 22 Apr 2023 21:23:56 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/powershell-universal/</guid>
+      <description>PowerShell Universal (PSU) is most effective when used as a thin automation control plane: API endpoints receive validated requests, jobs execute isolated scripts, and standardized responses make downstream orchestration deterministic. In enterprise operations, this enables repeatable automation for identity lifecycle, endpoint management, and service request fulfillment without embedding business logic directly in ticketing tools.&#xA;Core runtime model PSU provides three primitives that map cleanly to production workflows:&#xA;Endpoints: Synchronous API surfaces for intake, validation, and job dispatch.</description>
+    </item>
     <item>
       <title>Advanced PowerShell Parameter Usage and Aliases</title>
       <link>https://michaelhanson.dev/posts/powershell-param/</link>
       <pubDate>Mon, 17 Apr 2023 19:52:42 -0500</pubDate>
-      
       <guid>https://michaelhanson.dev/posts/powershell-param/</guid>
       <description>PowerShell is a powerful tool for system administrators and developers alike. It allows you to automate tasks, manage systems, and work with data quickly and easily. One of the features that makes PowerShell so flexible is its parameter system, which lets you customize the behavior of commands and scripts with a wide range of options. In this blog post, we&amp;rsquo;ll take a look at some advanced PowerShell parameter usage, including aliases.</description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>https://michaelhanson.dev/education/</link>
-      <pubDate>Sun, 16 Apr 2023 18:23:41 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/education/</guid>
-      <description> { &amp;#34;Universities&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;University of South Dakota&amp;#34;, &amp;#34;alias&amp;#34;: &amp;#34;USD&amp;#34;, &amp;#34;degrees&amp;#34;: { &amp;#34;major&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Computer Science&amp;#34;, &amp;#34;start_date&amp;#34;: &amp;#34;2014-08-01&amp;#34;, &amp;#34;end_date&amp;#34;: &amp;#34;2018-05-01&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;completed&amp;#34;, &amp;#34;gpa&amp;#34;: &amp;#34;3.6&amp;#34;, &amp;#34;courses&amp;#34;: [ &amp;#34;CSC 324 Machine Learning&amp;#34;, &amp;#34;Math 216 Discrete Structures&amp;#34;, &amp;#34;CSC 350 Algorithms and Data Structures&amp;#34;, &amp;#34;CSC 480 Capstone Software Engineering&amp;#34;, &amp;#34;CSC 492 Unix Environment&amp;#34; ] }, &amp;#34;minor&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Business Administration&amp;#34;, &amp;#34;end_date&amp;#34;: &amp;#34;2018-05-01&amp;#34;, &amp;#34;status&amp;#34;: &amp;#34;completed&amp;#34; }, &amp;#34;accomplishments&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;Dean&amp;#39;s List&amp;#34;, &amp;#34;date&amp;#34;: [&amp;#34;Spring 2017&amp;#34;, &amp;#34;Fall 2017&amp;#34;] }, &amp;#34;clubs&amp;#34;: [ { &amp;#34;id&amp;#34;: 1, &amp;#34;name&amp;#34;: &amp;#34;Association for Computing Machinery&amp;#34; }, { &amp;#34;id&amp;#34;: 2, &amp;#34;name&amp;#34;: &amp;#34;National Collegiate Cyber Defense Competition&amp;#34; } ] } } } </description>
-    </item>
-    
     <item>
       <title>Experiences 🎓</title>
       <link>https://michaelhanson.dev/experiences/</link>
       <pubDate>Mon, 26 Dec 2022 18:59:36 -0600</pubDate>
-      
       <guid>https://michaelhanson.dev/experiences/</guid>
-      <description>South Dakota: Bureau of Information and Telecommunications Link to heading Service Delivery Endpoint Architect (June 2021 - Present) Synopsis: Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota.
-Boarding (on/off) process automations Configured OS provisioning toolset Developed custom RESTful endpoints for various toolsets Enroll endpoints into Azure AD and other MDM solutions Technology Engineer II (June 2018 – June 2021)</description>
+      <description>South Dakota: Bureau of Information and Telecommunications Service Delivery Endpoint Architect (June 2021 - Present) Synopsis: Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota.&#xA;Boarding (on/off) process automations Configured OS provisioning toolset Developed custom RESTful endpoints for various toolsets Enroll endpoints into Azure AD and other MDM solutions Technology Engineer II (June 2018 – June 2021)&#xA;Automated employee offboarding process. Implemented OS deployments and device provisioning.</description>
     </item>
-    
     <item>
       <title>Graylog Notifier</title>
       <link>https://michaelhanson.dev/posts/graylog-notifier/</link>
       <pubDate>Sat, 11 Jun 2022 11:44:30 -0500</pubDate>
-      
       <guid>https://michaelhanson.dev/posts/graylog-notifier/</guid>
-      <description>GrayCord Link to heading Graylog API log parser to discord
-Graylog + Discord = GrayCord Link to heading Why? Link to heading Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
-How does it work? Link to heading The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
+      <description>GrayCord Graylog API log parser to discord&#xA;Graylog + Discord = GrayCord Why? Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.&#xA;How does it work? The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide.</description>
     </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://michaelhanson.dev/projects/</link>
-      <pubDate>Mon, 30 May 2022 10:35:21 -0500</pubDate>
-      
-      <guid>https://michaelhanson.dev/projects/</guid>
-      <description>Here&amp;rsquo;s a list of some of the open source projects I&amp;rsquo;ve worked on:
-ChocolateyManager Link to heading I was tired of manually running chocolatey updates and wanted a more automated way for my updates to just happen in the background. If you are interested in automating your software updates, have a look at the repo.
-If you run the update script from windows task scheduler you will get a nice toast message when your updater runs.</description>
-    </item>
-    
     <item>
       <title>Custom DNS Names in PIhole</title>
       <link>https://michaelhanson.dev/posts/hello-world/</link>
       <pubDate>Mon, 30 May 2022 10:32:22 -0500</pubDate>
-      
       <guid>https://michaelhanson.dev/posts/hello-world/</guid>
-      <description>Assuming you already have Pihole up and running, create a new .conf file in the following directory
-/etc/dnsmasq.d/yourname.conf nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2. </description>
+      <description>Assuming you already have Pihole up and running, create a new .conf file in the following directory&#xA;/etc/dnsmasq.d/yourname.conf nano or vim into &amp;ldquo;yourname.conf&amp;rdquo; Add the following on a new line &amp;ldquo;address=/unraid.local/192.168.1.100&amp;rdquo; That IP address can be whatever IP on your LAN, for instance it could be your unraid IP. Reload pihole DNS pihole restartdns Now navigate to that address you specified in step 2. </description>
     </item>
-    
     <item>
       <title>Setting up fail2ban with LE/NGINX/WP</title>
       <link>https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</link>
       <pubDate>Fri, 27 Dec 2019 11:50:31 -0500</pubDate>
-      
       <guid>https://michaelhanson.dev/posts/fail2ban-letsencrypt-nginx-wordpress/</guid>
-      <description>NOTICE: Link to heading This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
-1. Edit jail.local Link to heading At the bottom of the file, add the following block of code.
-[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filters Link to heading Inside the filter.</description>
+      <description>NOTICE: This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.&#xA;1. Edit jail.local At the bottom of the file, add the following block of code.&#xA;[wordpress] enabled = true port = http,https filter = wordpress-auth logpath = /config/log/nginx/access.log maxretry = 3 bantime = 3600 ignoreip = 192.168.1.0/24 2. Edit filters Inside the filter.d directory create a new config file called &amp;ldquo;wordpress-auth.</description>
     </item>
-    
     <item>
       <title>WordPress and UnRaid</title>
       <link>https://michaelhanson.dev/posts/hosting-wp-on-unraid/</link>
       <pubDate>Tue, 11 Jun 2019 12:10:08 -0500</pubDate>
-      
       <guid>https://michaelhanson.dev/posts/hosting-wp-on-unraid/</guid>
-      <description>High overview of how to setup a WordPress site that is hosted through Unraid. Link to heading This blog is something for me to look back at as a resource and to possibly help someone like you out.
-1. Domain Names Link to heading Make sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker.</description>
+      <description>Overview This blog is something for me to look back at as a resource and to possibly help someone like you out.&#xA;1. Domain Names Make sure you have a domain name and that you have your &amp;lsquo;CNAME&amp;rsquo;s created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker. Googles default is 1 hour. (The items crossed out are dynamic dns names for my public IP)</description>
     </item>
-    
     <item>
       <title>Hi there 👋</title>
       <link>https://michaelhanson.dev/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://michaelhanson.dev/about/</guid>
       <description>$aboutMe = [PSCustomObject]@{ Name = &amp;#39;Michael&amp;#39; Languages = @(&amp;#34;PowerShell&amp;#34;, &amp;#34;C#&amp;#34;, &amp;#34;Java&amp;#34;) Location = &amp;#39;South Dakota&amp;#39; OpenToWork = $true } return $aboutMe I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.</description>
     </item>
-    
   </channel>
 </rss>

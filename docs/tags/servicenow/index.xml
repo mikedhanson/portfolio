@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ServiceNow on &lt;$Mike/&gt;</title>
+    <link>https://michaelhanson.dev/tags/servicenow/</link>
+    <description>Recent content in ServiceNow on &lt;$Mike/&gt;</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Apr 2023 21:24:31 -0500</lastBuildDate>
+    <atom:link href="https://michaelhanson.dev/tags/servicenow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating on-prem processes with ServiceNow</title>
+      <link>https://michaelhanson.dev/posts/automation-in-servicenow/</link>
+      <pubDate>Sat, 22 Apr 2023 21:24:31 -0500</pubDate>
+      <guid>https://michaelhanson.dev/posts/automation-in-servicenow/</guid>
+      <description>ServiceNow can orchestrate on-premises operations reliably when it is treated as a workflow control plane rather than an execution engine. A proven pattern is for ServiceNow Flow Designer to handle approvals and state transitions, a MID Server to broker network-local traffic, and an internal automation runtime—such as PowerShell-based workers—to perform privileged actions in Active Directory, file services, or endpoint infrastructure.&#xA;Reference architecture Requester -&amp;gt; Service Catalog Item -&amp;gt; Flow Designer -&amp;gt; Action/Subflow | v REST Message (MID) | v Internal API Endpoint | v Job Queue + Worker (PowerShell/Runbook) | v AD / DNS / PKI / File / Endpoint systems | v Status callback to ServiceNow record Design principles Asynchronous by default: Return immediately with a correlation ID, then update task or work notes as the job progresses.</description>
+    </item>
+  </channel>
+</rss>

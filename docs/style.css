@@ -1,0 +1,72 @@
+#hero {
+  min-height: 0;
+}
+
+#hero h2 {
+  white-space: pre-line;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+#hero a.btn.social-icon {
+  margin-top: 1.5rem;
+}
+
+.education-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.education-card-link .card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.education-card-link:hover .card,
+.education-card-link:focus-visible .card {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.education-json-card {
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border: 1px solid rgb(127 127 127 / 25%);
+  border-radius: 0.9rem;
+  background: var(--background-color);
+  box-shadow: 0 0.75rem 2rem rgb(15 80 100 / 10%);
+}
+
+.education-json-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.1rem;
+  color: #fff;
+  background: linear-gradient(110deg, #176b87, #3977bb);
+  font-weight: 600;
+}
+
+.education-json-card__format {
+  padding: 0.15rem 0.55rem;
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.education-json-card__body {
+  max-height: 34rem;
+  overflow: auto;
+}
+
+.education-json-card__body pre {
+  margin: 0;
+  padding: 1.1rem;
+  border-radius: 0;
+  font-size: 0.88rem;
+}
+
+.education-json-card__body code {
+  white-space: pre;
+}

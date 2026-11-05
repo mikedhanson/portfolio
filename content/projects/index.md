@@ -1,77 +1,43 @@
 ---
 title: "Projects"
-date: 2022-05-30T10:35:21-05:00
+date: 2026-11-05T10:35:00-06:00
 draft: false
 ---
 
-Here's a list of some of the open source projects I've worked on:
+Here are a few projects that reflect the work I enjoy: endpoint automation, security, and self-hosted tools.
 
----
+## Current projects
 
-# ChocolateyManager
+### [Browser Extension Manager](https://github.com/mikedhanson/browser-extension-manager)
 
-I was tired of manually running chocolatey updates and wanted a more automated way for my updates to just happen in the background. If you are interested in automating your software updates, have a look at the repo. 
+A Chrome extension for reviewing installed extensions, understanding permission risks, and managing extension profiles.
 
-If you run the update script from windows task scheduler you will get a nice toast message when your updater runs. 
+### [OSDCloud](https://github.com/mikedhanson/OSDCloud)
 
-![image](https://user-images.githubusercontent.com/15201245/211106406-ebb7d695-2f24-4c03-8e25-9e0fc3eea3e4.png)
+PowerShell scripts for Windows deployment and device-preparation workflows using OSDCloud.
 
-[Repository](https://github.com/mikedhanson/ChocolateyManager)
+### [Home Assistant iQua Softener](https://github.com/mikedhanson/homeassistant-iqua-softener)
 
----
+A custom Home Assistant integration that brings data from supported iQua app-connected water softeners into Home Assistant.
 
-# Graycord
+### [Unraid Templates](https://github.com/mikedhanson/unraid-templates)
 
-### Why? 
+Custom Unraid application templates, including a template for PowerShell Universal.
 
-Graylog does a good job as a standalone syslog server but I found a shortcoming where it wasn’t able to send alerts to discord. So, I took on the challenge to dive into python3 and learn all about docker.
+### [Windows Location Services](https://github.com/mikedhanson/WindowsLocationServices)
 
-### How does it work? 
+A small C# example that reads Windows location data and looks up a readable address.
 
-The script loops on an interval doing api calls to graylog checking for the SEARCH_QUERY that you provide. For example you can specify any search query that you can make through graylog and get that data back to whatever discord CHANNEL you choose. 
+## Earlier projects
 
-[Repository](https://github.com/mikedhanson/graycord)
+### [ChocolateyManager](https://github.com/mikedhanson/ChocolateyManager)
 
+PowerShell scripts for installing, updating, and uninstalling Chocolatey packages, including scheduled updates.
 
----
+### [GrayCord](https://github.com/mikedhanson/graycord)
 
-# Unraid - Rclone Backup
+A Python and Docker project that checks Graylog queries and forwards matching results to Discord.
 
-### How does it work? And why?
+### [Unraid Rclone Backups](https://github.com/mikedhanson/Rclone) · archived
 
-Following the 3-2-1 backup [strategy](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) and hosting an unraid server I wanted an automated way to backup core files and folders on my unraid server all while encrypting the offsite data. The solution to this was rclone. I was able to write some scripts that use rclone to do all of this. This solution incorporates logging and alerts in unraid which get sent to a discord server.
-
-### Items backed up 
-* Appdata 
-* Flash 
-* Network 
-* Veeam 
-
-| Directory      | Local                | Offsite        |
-| :---           | :----:               |   ---:         |   
-| Appdata        | Weekly (sun 2am)     | Weekly         |
-| Libvirt        | Weekly (sun 2am)     | Weekly         |
-| Flash          | Weekly (sun 2am)     | Weekly         |
-| Network        |                      | Weekly         |
-| Veeam          | MWF                  | Weekly         |
-| Manual         | MWF                  | Weekly         |
-
-[Repository](https://github.com/mikedhanson/graycord)
-
-
----
-
-# Flask-Weather-Covid
-
-### What? 
-
-I wanted to learn about flask during the pandemic.
-
-[Repository](hhttps://github.com/mikedhanson/Flask-Weather-Covid)
-
----
-
-
-Rclone
-
-Thank you for taking the time to check out my projects!
+Scripts for scheduled Unraid backups with Rclone, including encrypted off-site copies, logging, and notifications.
