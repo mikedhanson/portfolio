@@ -40,7 +40,7 @@
 
 .experience-list__company,
 .experience-list__date {
-  color: var(--secondary-color);
+  color: var(--text-secondary-color);
 }
 
 .experience-list__date {

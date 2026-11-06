@@ -64,10 +64,6 @@ params:
         - icon: "fab fa-linkedin"
           name: "LinkedIn"
           url: "https://www.linkedin.com/in/michael-h-396129134/"
-        - icon: "fab fa-twitter"
-          name: "Twitter"
-          url: "https://twitter.com/mikehanson1458"
-
   about:
     enable: true
     title: "About Me"
@@ -134,4 +130,3 @@ params:
     socialNetworks:
       github: "https://github.com/mikedhanson"
       linkedin: "https://www.linkedin.com/in/michael-h-396129134/"
-      twitter: "https://twitter.com/mikehanson1458"
